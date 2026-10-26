@@ -1,0 +1,1240 @@
+# Seed data for Awesome Pluralistic AI Alignment.
+# Schema per entry:
+#   title, venue, year, vhint (where the link was seen), url (canonical, backfilled by updater),
+#   modes: [overton|steerable|distributional|all], method: empirical|design_science|na,
+#   track: cs|journals, kind: method|dataset|benchmark|survey|position,
+#   blurb (one line), conf (classification confidence: high|medium|low)
+# Seed import: anudeex/Awesome-Pluralistic-Alignment (2026-10-02). URLs resolve on first updater run.
+
+# ---------------- OVERTON ----------------
+- title: "ReConcile: Round-Table Conference Improves Reasoning via Consensus among Diverse LLMs"
+  venue: "ICLR"
+  year: 2024
+  vhint: openreview
+  url: https://arxiv.org/abs/2309.13007v3
+  modes: [overton]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Multi-LLM round-table consensus that preserves diverse model views while improving reasoning."
+  conf: high
+- title: "The Unlocking Spell on Base LLMs: Rethinking Alignment via In-Context Learning"
+  venue: null
+  year: 2023
+  vhint: arxiv
+  url: https://arxiv.org/abs/2312.01552v1
+  modes: [overton]
+  method: empirical
+  track: cs
+  kind: method
+  blurb: "Shows base models can surface diverse value stances through in-context learning alone."
+  conf: medium
+- title: "From Distributional to Overton Pluralism: Investigating Large Language Model Alignment"
+  venue: null
+  year: 2024
+  vhint: aclanthology
+  url: https://arxiv.org/abs/2406.17692v2
+  modes: [overton]
+  method: empirical
+  track: cs
+  kind: method
+  blurb: "Investigates how alignment shifts models between distributional and Overton-style pluralism."
+  conf: high
+- title: "Large Language Models as Optimizers"
+  venue: null
+  year: 2023
+  vhint: openreview
+  url: https://arxiv.org/abs/2309.03409v3
+  modes: [overton]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Optimization-style prompting that aggregates diverse candidate solutions."
+  conf: high
+- title: "PICACO: Pluralistic In-Context Value Alignment of LLMs via Total Correlation Optimization"
+  venue: null
+  year: 2025
+  vhint: arxiv
+  url: https://arxiv.org/abs/2507.16679v4
+  modes: [overton]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "In-context value alignment via total correlation optimization across plural values."
+  conf: high
+- title: "MaxMin-RLHF: Alignment with Diverse Human Preferences"
+  venue: null
+  year: 2024
+  vhint: arxiv
+  url: https://arxiv.org/abs/2402.08925v2
+  modes: [overton]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Rawlsian max-min RLHF objective that protects worst-off preference groups."
+  conf: high
+- title: "Black-Box Prompt Optimization: Aligning Large Language Models without Model Training"
+  venue: null
+  year: 2023
+  vhint: aclanthology
+  url: https://arxiv.org/abs/2311.04155v3
+  modes: [overton]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Aligns models to plural objectives by optimizing prompts, no training required."
+  conf: high
+- title: "Policy Prototyping for LLMs: Pluralistic Alignment via Interactive and Collaborative Policymaking"
+  venue: null
+  year: 2024
+  vhint: arxiv
+  url: https://arxiv.org/abs/2409.08622v2
+  modes: [overton]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Interactive, collaborative policymaking process for specifying pluralistic model behavior."
+  conf: high
+- title: "Reflective Verbal Reward Design for Pluralistic Alignment"
+  venue: null
+  year: 2025
+  vhint: arxiv
+  url: https://arxiv.org/abs/2506.17834v1
+  modes: [overton, steerable]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Uses verbal self-reflection to design rewards covering plural values."
+  conf: medium
+- title: "Beyond the Monolithic Interface: A Research Agenda for Plural Conversational AI"
+  venue: null
+  year: 2026
+  vhint: arxiv
+  url: https://arxiv.org/abs/2610.12878
+  modes: [overton]
+  method: na
+  track: cs
+  kind: position
+  blurb: "Research agenda proposing multi-persona conversational AI interfaces as an alternative to the single-voice chatbot."
+  conf: medium
+- title: "Authority locking vs. pluralistic sourcing in generative search: evidence compression beyond top-spot displacement"
+  venue: Electronic Commerce Research
+  year: 2026
+  vhint: crossref
+  url: https://doi.org/10.1007/s10660-026-10209-1
+  modes: [overton]
+  method: empirical
+  track: journals
+  kind: method
+  blurb: "Studies whether generative-search citations mirror organic rankings or reflect a distinct, pluralistic source-selection logic."
+  conf: low
+- title: "A pluralistic view on AI ethics: perspectives from Buen Vivir"
+  venue: AI and Ethics
+  year: 2026
+  vhint: crossref
+  url: https://doi.org/10.1007/s43681-026-01403-w
+  modes: [overton]
+  method: na
+  track: journals
+  kind: position
+  blurb: "Argues for incorporating Global South cosmovisions, such as Buen Vivir, into AI ethics and regulation."
+  conf: low
+
+# ---------------- STEERABLE ----------------
+- title: "Not All Countries Celebrate Thanksgiving: On the Cultural Dominance in Large Language Models"
+  venue: null
+  year: 2023
+  vhint: aclanthology
+  url: https://arxiv.org/abs/2310.12481v2
+  modes: [steerable]
+  method: empirical
+  track: cs
+  kind: method
+  blurb: "Documents US-centric cultural dominance in LLM outputs."
+  conf: high
+- title: "Cultural Alignment in Large Language Models: An Explanatory Analysis Based on Hofstede's Cultural Dimensions"
+  venue: null
+  year: 2023
+  vhint: aclanthology
+  url: https://arxiv.org/abs/2309.12342v2
+  modes: [steerable]
+  method: empirical
+  track: cs
+  kind: method
+  blurb: "Explains LLM cultural alignment through Hofstede's cultural dimensions."
+  conf: high
+- title: "CULTURE-GEN: Revealing Global Cultural Perception in Language Models through Natural Language Prompting"
+  venue: null
+  year: 2024
+  vhint: arxiv
+  url: https://arxiv.org/abs/2404.10199v5
+  modes: [steerable]
+  method: empirical
+  track: cs
+  kind: method
+  blurb: "Probes global cultural perception in LMs via natural-language prompting."
+  conf: high
+- title: "Evaluating Cultural Adaptability of a Large Language Model via Simulation of Synthetic Personas"
+  venue: null
+  year: 2024
+  vhint: arxiv
+  url: https://arxiv.org/abs/2408.06929v1
+  modes: [steerable]
+  method: empirical
+  track: cs
+  kind: method
+  blurb: "Simulates synthetic personas to test LLM cultural adaptability."
+  conf: high
+- title: "PERSONA: A Reproducible Testbed for Pluralistic Alignment"
+  venue: "COLING"
+  year: 2025
+  vhint: aclanthology
+  url: https://arxiv.org/abs/2407.17387v1
+  modes: [steerable]
+  method: design_science
+  track: cs
+  kind: dataset
+  blurb: "Reproducible testbed with synthetic personas for pluralistic alignment research."
+  conf: high
+- title: "Evaluating and Inducing Personality in Pre-trained Language Models"
+  venue: "NeurIPS"
+  year: null
+  vhint: neurips
+  url: https://arxiv.org/abs/2206.07550v3
+  modes: [steerable, distributional]
+  method: empirical
+  track: cs
+  kind: method
+  blurb: "Tests whether stable personality traits can be induced in pretrained LMs."
+  conf: high
+- title: "SPICA: Retrieving Scenarios for Pluralistic In-Context Alignment"
+  venue: null
+  year: 2024
+  vhint: aclanthology
+  url: https://arxiv.org/abs/2411.10912v2
+  modes: [steerable]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Retrieval of scenarios to ground pluralistic in-context alignment."
+  conf: high
+- title: "Language Models are Alignable Decision-Makers: Dataset and Application to the Medical Triage Domain"
+  venue: null
+  year: 2024
+  vhint: aclanthology
+  url: https://arxiv.org/abs/2406.06435v1
+  modes: [steerable]
+  method: design_science
+  track: cs
+  kind: dataset
+  blurb: "Dataset and demo of steerable alignment for medical triage decisions."
+  conf: medium
+- title: "Steerable Pluralism: Pluralistic Alignment via Few-Shot Comparative Regression"
+  venue: null
+  year: 2025
+  vhint: arxiv
+  url: https://arxiv.org/abs/2508.08509v1
+  modes: [steerable]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Few-shot comparative regression to steer pluralistic value expression."
+  conf: high
+- title: "Exploring Chain-of-Thought Reasoning for Steerable Pluralistic Alignment"
+  venue: null
+  year: 2025
+  vhint: aclanthology
+  url: https://arxiv.org/abs/2510.04045v1
+  modes: [steerable]
+  method: empirical
+  track: cs
+  kind: method
+  blurb: "Studies chain-of-thought as a lever for steerable pluralism."
+  conf: medium
+- title: "NormAd: A Framework for Measuring the Cultural Adaptability of Large Language Models"
+  venue: null
+  year: 2024
+  vhint: aclanthology
+  url: https://arxiv.org/abs/2404.12464v10
+  modes: [steerable]
+  method: empirical
+  track: cs
+  kind: benchmark
+  blurb: "Framework measuring how well LLMs adapt to cultural norms."
+  conf: high
+- title: "Personality Alignment of Large Language Models"
+  venue: null
+  year: 2024
+  vhint: arxiv
+  url: https://arxiv.org/abs/2408.11779v2
+  modes: [steerable]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Trains personality-conditioned alignment into LLMs."
+  conf: high
+- title: "Self-Pluralising Culture Alignment for Large Language Models"
+  venue: null
+  year: 2024
+  vhint: aclanthology
+  url: https://arxiv.org/abs/2410.12971v1
+  modes: [steerable, distributional]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Self-generates cultural perspectives to broaden alignment coverage."
+  conf: high
+- title: "CultureBank: An Online Community-Driven Knowledge Base Towards Culturally Aware Language Technologies"
+  venue: null
+  year: 2024
+  vhint: aclanthology
+  url: https://arxiv.org/abs/2404.15238v1
+  modes: [steerable]
+  method: design_science
+  track: cs
+  kind: dataset
+  blurb: "Community-driven cultural knowledge base as an alignment resource."
+  conf: high
+- title: "CulturePark: Boosting Cross-cultural Understanding in Large Language Models"
+  venue: "NeurIPS"
+  year: null
+  vhint: neurips
+  url: https://arxiv.org/abs/2405.15145v3
+  modes: [steerable]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Multi-agent cross-cultural dialogue to boost cultural understanding."
+  conf: high
+- title: "From Values to Opinions: Predicting Human Behaviors and Stances Using Value-Injected Large Language Models"
+  venue: null
+  year: 2023
+  vhint: aclanthology
+  url: https://arxiv.org/abs/2310.17857v1
+  modes: [steerable]
+  method: empirical
+  track: cs
+  kind: method
+  blurb: "Evaluates whether value-injected LMs predict human stances and behaviors."
+  conf: low
+- title: "Value FULCRA: Mapping Large Language Models to the Multidimensional Spectrum of Basic Human Value"
+  venue: "NAACL"
+  year: 2024
+  vhint: aclanthology
+  url: https://aclanthology.org/2024.naacl-long.486/
+  modes: [steerable]
+  method: empirical
+  track: cs
+  kind: benchmark
+  blurb: "Maps LLMs onto the multidimensional spectrum of basic human values."
+  conf: high
+- title: "LoRe: Personalizing LLMs via Low-Rank Reward Modeling"
+  venue: null
+  year: 2025
+  vhint: arxiv
+  url: https://arxiv.org/abs/2504.14439v1
+  modes: [steerable]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Low-rank reward modeling for efficient LLM personalization."
+  conf: high
+- title: "Value Alignment from Unstructured Text"
+  venue: null
+  year: 2024
+  vhint: aclanthology
+  url: https://arxiv.org/abs/2408.10392v1
+  modes: [steerable]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Extracts alignment signal for steerable values from unstructured text."
+  conf: high
+- title: "Counterfactual Reasoning for Steerable Pluralistic Value Alignment of Large Language Models"
+  venue: null
+  year: 2025
+  vhint: arxiv
+  url: https://arxiv.org/abs/2510.18526v2
+  modes: [steerable]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Counterfactual reasoning as a mechanism for steerable value alignment."
+  conf: high
+- title: "Are the Values of LLMs Structurally Aligned with Humans? A Causal Perspective"
+  venue: null
+  year: 2024
+  vhint: aclanthology
+  url: https://arxiv.org/abs/2501.00581v2
+  modes: [steerable]
+  method: empirical
+  track: cs
+  kind: method
+  blurb: "Causal analysis of structural alignment between LLM and human values."
+  conf: high
+- title: "CultureLLM: Incorporating Cultural Differences into Large Language Models"
+  venue: "NeurIPS"
+  year: null
+  vhint: neurips
+  url: https://arxiv.org/abs/2402.10946v3
+  modes: [steerable]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Culture-specific tuning to incorporate cultural differences."
+  conf: high
+- title: "Arithmetic Control of LLMs for Diverse User Preferences: Directional Preference Alignment with Multi-Objective Rewards"
+  venue: null
+  year: 2024
+  vhint: aclanthology
+  url: https://arxiv.org/abs/2402.18571v3
+  modes: [steerable]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Multi-objective reward arithmetic for serving diverse user preferences."
+  conf: high
+- title: "SteerLM: Attribute Conditioned SFT as an (User-Steerable) Alternative to RLHF"
+  venue: null
+  year: 2024
+  vhint: aclanthology
+  url: https://arxiv.org/abs/2310.05344v1
+  modes: [steerable]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Attribute-conditioned SFT as a steerable alternative to RLHF."
+  conf: high
+- title: "Interpretable Preferences via Multi-Objective Reward Modeling and Mixture-of-Experts"
+  venue: null
+  year: 2024
+  vhint: aclanthology
+  url: https://arxiv.org/abs/2406.12845v1
+  modes: [steerable]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Mixture-of-experts reward models for interpretable plural preferences."
+  conf: high
+- title: "Few-shot Steerable Alignment: Adapting Rewards and LLM Policies with Neural Processes"
+  venue: null
+  year: 2024
+  vhint: arxiv
+  url: https://arxiv.org/abs/2412.13998v1
+  modes: [steerable]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Neural processes adapt rewards and policies to new principals few-shot."
+  conf: high
+- title: "Robust Multi-Objective Controlled Decoding of Large Language Models"
+  venue: null
+  year: 2025
+  vhint: arxiv
+  url: https://arxiv.org/abs/2503.08796v2
+  modes: [steerable]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Decoding-time multi-objective control robust to preference shifts."
+  conf: high
+- title: "Aligning Machiavellian Agents: Behavior Steering via Test-Time Policy Shaping"
+  venue: "AAAI"
+  year: null
+  vhint: aaai
+  url: https://arxiv.org/abs/2511.11551v3
+  modes: [steerable]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Test-time policy shaping to steer agentic behavior."
+  conf: high
+- title: "Steerable Alignment with Conditional Multiobjective Preference Optimization"
+  venue: null
+  year: null
+  vhint: mit
+  url: null
+  modes: [steerable]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Conditional multi-objective preference optimization for steerability."
+  conf: medium
+- title: "Controllable Preference Optimization: Toward Controllable Multi-Objective Alignment"
+  venue: null
+  year: 2024
+  vhint: aclanthology
+  url: https://arxiv.org/abs/2402.19085v3
+  modes: [steerable]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Preference optimization with explicit controllability over objectives."
+  conf: high
+- title: "Aligning to Thousands of Preferences via System Message Generalization"
+  venue: "NeurIPS"
+  year: null
+  vhint: neurips
+  url: https://arxiv.org/abs/2405.17977v2
+  modes: [steerable]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Generalizes system messages to serve thousands of distinct preferences."
+  conf: high
+
+# ---------------- DISTRIBUTIONAL ----------------
+- title: "Distributional Alignment for Social Simulation with LLMs: A Prompt Mixture Modeling Approach"
+  venue: null
+  year: null
+  vhint: openreview
+  url: https://openreview.net/forum?id=6KM1siLL8a
+  modes: [distributional]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Prompt-mixture modeling for distributional social simulation."
+  conf: high
+- title: "OASIS: Open Agent Social Interaction Simulations with One Million Agents"
+  venue: null
+  year: 2024
+  vhint: arxiv
+  url: https://arxiv.org/abs/2411.11581v5
+  modes: [distributional]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Million-agent simulation testbed for studying emergent social distributions."
+  conf: high
+- title: "Social Simulacra: Creating Populated Prototypes for Social Computing Systems"
+  venue: "ACM"
+  year: 2022
+  vhint: acm
+  url: https://arxiv.org/abs/2208.04024v1
+  modes: [distributional]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Populated prototypes that simulate community-level behavior distributions."
+  conf: medium
+- title: "Specializing Large Language Models to Simulate Survey Response Distributions for Global Populations"
+  venue: null
+  year: 2025
+  vhint: aclanthology
+  url: https://arxiv.org/abs/2502.07068v2
+  modes: [distributional]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Tunes LMs to reproduce global survey response distributions."
+  conf: high
+- title: "Self-Alignment: Improving Alignment of Cultural Values in LLMs via In-Context Learning"
+  venue: null
+  year: 2024
+  vhint: arxiv
+  url: https://arxiv.org/abs/2408.16482v2
+  modes: [distributional]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "In-context self-alignment of cultural value distributions."
+  conf: high
+- title: "MixDPO: Modeling Preference Strength for Pluralistic Alignment"
+  venue: null
+  year: 2026
+  vhint: arxiv
+  url: https://arxiv.org/abs/2601.06180v1
+  modes: [distributional]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "DPO variant modeling dispersion in preference strength."
+  conf: high
+- title: "Pairwise Calibrated Rewards for Pluralistic Alignment"
+  venue: null
+  year: 2025
+  vhint: arxiv
+  url: https://arxiv.org/abs/2506.06298v1
+  modes: [distributional]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Calibrated pairwise rewards that preserve preference heterogeneity."
+  conf: high
+- title: "Imitation Beyond Expectation Using Pluralistic Stochastic Dominance"
+  venue: null
+  year: null
+  vhint: openreview
+  url: https://openreview.net/forum?id=YX5DHa9OfX
+  modes: [distributional]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Imitation learning under pluralistic stochastic dominance criteria."
+  conf: high
+- title: "Group Robust Preference Optimization in Reward-free RLHF"
+  venue: "NeurIPS"
+  year: null
+  vhint: neurips
+  url: https://arxiv.org/abs/2405.20304v1
+  modes: [distributional]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Group-robust preference optimization without reward models."
+  conf: high
+- title: "Language Model Fine-Tuning on Scaled Survey Data for Predicting Distributions of Public Opinions"
+  venue: null
+  year: 2025
+  vhint: aclanthology
+  url: https://arxiv.org/abs/2502.16761v2
+  modes: [distributional]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Fine-tunes on scaled survey data to predict public-opinion distributions."
+  conf: high
+- title: "MallowsPO: Fine-Tune Your LLM with Preference Dispersions"
+  venue: null
+  year: 2024
+  vhint: arxiv
+  url: https://arxiv.org/abs/2405.14953v5
+  modes: [distributional]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Preference optimization with Mallows-modeled preference dispersion."
+  conf: high
+- title: "Aligning Crowd Feedback via Distributional Preference Reward Modeling"
+  venue: null
+  year: 2024
+  vhint: arxiv
+  url: https://arxiv.org/abs/2402.09764v3
+  modes: [distributional]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Distributional reward modeling for heterogeneous crowd feedback."
+  conf: high
+- title: "PAL: Pluralistic Alignment Framework for Learning from Heterogeneous Preferences"
+  venue: null
+  year: 2024
+  vhint: arxiv
+  url: https://arxiv.org/abs/2406.08469v1
+  modes: [distributional]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Framework for learning from heterogeneous preference data."
+  conf: high
+- title: "The Pluralistic Moral Gap: Understanding Moral Judgment and Value Differences between Humans and Large Language Models"
+  venue: "EACL"
+  year: 2026
+  vhint: aclanthology
+  url: https://aclanthology.org/2026.eacl-long.305/
+  modes: [distributional]
+  method: empirical
+  track: cs
+  kind: method
+  blurb: "Compares human and LLM moral-judgment distributions to quantify the gap."
+  conf: high
+- title: "Language Model Alignment in Multilingual Trolley Problems"
+  venue: null
+  year: 2024
+  vhint: arxiv
+  url: https://arxiv.org/abs/2407.02273v6
+  modes: [distributional]
+  method: empirical
+  track: cs
+  kind: benchmark
+  blurb: "Multilingual moral-dilemma benchmark for alignment evaluation."
+  conf: high
+- title: "PluralLLM: Pluralistic Alignment in LLMs via Federated Learning"
+  venue: "ACM"
+  year: null
+  vhint: acm
+  url: https://arxiv.org/abs/2503.09925v1
+  modes: [distributional]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Federated learning to keep pluralistic preference data decentralized."
+  conf: high
+- title: "Improving the Distributional Alignment of LLMs using Supervision"
+  venue: null
+  year: 2025
+  vhint: arxiv
+  url: https://arxiv.org/abs/2507.00439v4
+  modes: [distributional]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Supervised techniques to improve distributional alignment."
+  conf: high
+- title: "Who Should We Listen to More? Welfare-Aware Preference Acquisition for Pluralistic Alignment"
+  venue: null
+  year: 2026
+  vhint: arxiv
+  url: https://arxiv.org/abs/2610.19035
+  modes: [distributional]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Defines a social-welfare objective for allocating human feedback across people when training for pluralistic alignment."
+  conf: high
+- title: "Algorithmic canonization: AI and art history through an Asian lens"
+  venue: AI & SOCIETY
+  year: 2026
+  vhint: crossref
+  url: https://link.springer.com/article/10.1007/s00146-026-03361-7
+  modes: [distributional]
+  method: empirical
+  track: journals
+  kind: method
+  blurb: "Systematic review of the AI-and-art-history literature; introduces 'algorithmic canonization' to describe how AI systems standardize what is remembered."
+  conf: low
+- title: "Generative AI and the homogenization of analyst forecasts"
+  venue: Finance Research Letters
+  year: 2026
+  vhint: crossref
+  url: https://doi.org/10.1016/j.frl.2026.110767
+  modes: [distributional]
+  method: empirical
+  track: journals
+  kind: method
+  blurb: "Empirical study of generative AI's effect on the diversity of analyst forecasts."
+  conf: low
+- title: "The Algorithmic Flattening of Sound: Computational Evidence and Justice Implications of AI Music Homogenization"
+  venue: AIES
+  year: 2026
+  vhint: crossref
+  url: https://doi.org/10.1609/aies.v9i4.43312
+  modes: [distributional]
+  method: empirical
+  track: cs
+  kind: method
+  blurb: "Audits homogenization in two commercial generative-music systems across four genres using 72 music information retrieval features."
+  conf: medium
+
+# ---------------- CROSS-CUTTING (ALL MODES) ----------------
+- title: "Pluralistic Alignment for Healthcare: A Role-Driven Framework"
+  venue: "EMNLP"
+  year: 2025
+  vhint: aclanthology
+  url: https://arxiv.org/abs/2509.10685v2
+  modes: [all]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Role-driven pluralistic alignment framework for the healthcare domain."
+  conf: high
+- title: "VISPA: Pluralistic Alignment via Automatic Value Selection and Activation"
+  venue: null
+  year: 2026
+  vhint: arxiv
+  url: https://arxiv.org/abs/2601.12758v2
+  modes: [all]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Automatically selects and activates relevant values at inference time."
+  conf: high
+- title: "Group Robust Best-of-K Decoding of Language Models for Pluralistic Alignment"
+  venue: null
+  year: null
+  vhint: openreview
+  url: https://openreview.net/forum?id=JI6j4NUGHv
+  modes: [all]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Group-robust best-of-K decoding that protects minority preference groups."
+  conf: high
+- title: "Modular Pluralism: Pluralistic Alignment via Multi-LLM Collaboration"
+  venue: "EMNLP"
+  year: 2024
+  vhint: aclanthology
+  url: https://arxiv.org/abs/2406.15951v2
+  modes: [all]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Multi-LLM collaboration where specialized models jointly serve pluralism."
+  conf: high
+- title: "Cultural Palette: Pluralising Culture Alignment via Multi-agent Palette"
+  venue: null
+  year: 2024
+  vhint: arxiv
+  url: https://arxiv.org/abs/2412.11167v4
+  modes: [all]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Multi-agent palette approach to pluralising cultural alignment."
+  conf: high
+- title: "A Roadmap to Pluralistic Alignment"
+  venue: "ICML"
+  year: 2024
+  vhint: arxiv
+  url: https://arxiv.org/abs/2402.05070v3
+  modes: [all]
+  method: na
+  track: cs
+  kind: position
+  blurb: "Foundational roadmap defining the Overton / steerable / distributional taxonomy."
+  conf: high
+- title: "Fine-tuning language models to find agreement among humans with diverse preferences"
+  venue: null
+  year: 2022
+  vhint: arxiv
+  url: "https://arxiv.org/abs/2211.15006"
+  modes: [distributional]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Early method for finding agreement across diverse human preferences."
+  conf: high
+- title: "What are human values, and how do we align AI to them?"
+  venue: null
+  year: 2024
+  vhint: arxiv
+  url: "https://arxiv.org/abs/2404.10636"
+  modes: [all]
+  method: na
+  track: cs
+  kind: position
+  blurb: "Philosophical grounding for what it means to align AI with human values."
+  conf: high
+- title: "Generative Social Choice"
+  venue: null
+  year: 2023
+  vhint: arxiv
+  url: "https://arxiv.org/abs/2309.01291"
+  modes: [overton]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Social-choice-theoretic framework for aggregating plural preferences in generative AI."
+  conf: medium
+- title: "Towards Pluralistic Value Alignment: Aggregating Value Systems through l_p-Regression"
+  venue: "AAMAS Workshop"
+  year: 2022
+  vhint: city
+  url: "https://openaccess.city.ac.uk/id/eprint/31381/"
+  modes: [distributional]
+  method: design_science
+  track: cs
+  kind: method
+  blurb: "Aggregates competing value systems via l_p-regression."
+  conf: high
+
+# ---------------- DATASETS & BENCHMARKS ----------------
+- title: "Navigating the Cultural Kaleidoscope: A Hitchhiker's Guide to Sensitivity in Large Language Models"
+  venue: "NAACL"
+  year: 2025
+  vhint: aclanthology
+  url: https://arxiv.org/abs/2410.12880v3
+  modes: [all]
+  method: empirical
+  track: cs
+  kind: benchmark
+  blurb: "Benchmark of LLM sensitivity across cultures."
+  conf: high
+- title: "VITAL: A New Dataset for Benchmarking Pluralistic Alignment in Healthcare"
+  venue: "ACL"
+  year: 2025
+  vhint: aclanthology
+  url: https://arxiv.org/abs/2502.13775v2
+  modes: [all]
+  method: empirical
+  track: cs
+  kind: dataset
+  blurb: "Healthcare-domain benchmark for pluralistic alignment."
+  conf: high
+- title: "Value Kaleidoscope: Engaging AI with Pluralistic Human Values, Rights, and Duties"
+  venue: null
+  year: 2023
+  vhint: arxiv
+  url: https://arxiv.org/abs/2309.00779v2
+  modes: [overton, steerable]
+  method: empirical
+  track: cs
+  kind: dataset
+  blurb: "Benchmark spanning pluralistic values, rights, and duties."
+  conf: high
+- title: "PluriHarms: Benchmarking the Full Spectrum of Human Judgments on AI Harm"
+  venue: null
+  year: 2026
+  vhint: arxiv
+  url: https://arxiv.org/abs/2601.08951v2
+  modes: [all]
+  method: empirical
+  track: cs
+  kind: benchmark
+  blurb: "Captures the full spectrum of human judgments about AI harm."
+  conf: high
+- title: "Whose Opinions Do Language Models Reflect?"
+  venue: null
+  year: 2023
+  vhint: arxiv
+  url: https://arxiv.org/abs/2303.17548v1
+  modes: [distributional]
+  method: empirical
+  track: cs
+  kind: benchmark
+  blurb: "Compares LLM opinions against demographic-group opinion distributions."
+  conf: high
+- title: "SafeWorld: Geo-Diverse Safety Alignment"
+  venue: "NeurIPS"
+  year: null
+  vhint: neurips
+  url: https://arxiv.org/abs/2412.06483v1
+  modes: [all]
+  method: empirical
+  track: cs
+  kind: benchmark
+  blurb: "Geo-diverse safety alignment benchmark."
+  conf: high
+- title: "HelpSteer 2: Open-source dataset for training top-performing reward models"
+  venue: "NeurIPS"
+  year: null
+  vhint: neurips
+  url: https://doi.org/10.52202/079017-0047
+  modes: [steerable]
+  method: design_science
+  track: cs
+  kind: dataset
+  blurb: "Large-scale open preference dataset for reward-model training (artifact)."
+  conf: high
+- title: "Whose View of Safety? A Deep DIVE Dataset for Pluralistic Alignment of Text-to-Image Models"
+  venue: null
+  year: 2025
+  vhint: arxiv
+  url: https://arxiv.org/abs/2507.13383v1
+  modes: [all]
+  method: empirical
+  track: cs
+  kind: dataset
+  blurb: "Pluralistic safety judgments for text-to-image models."
+  conf: high
+- title: "LIVS: A Pluralistic Alignment Dataset for Inclusive Public Spaces"
+  venue: null
+  year: 2025
+  vhint: arxiv
+  url: https://arxiv.org/abs/2503.01894v2
+  modes: [all]
+  method: empirical
+  track: cs
+  kind: dataset
+  blurb: "Pluralistic alignment dataset for inclusive public-space design."
+  conf: high
+- title: "Benchmarking Overton Pluralism in LLMs"
+  venue: null
+  year: 2025
+  vhint: arxiv
+  url: https://arxiv.org/abs/2512.01351v2
+  modes: [overton]
+  method: empirical
+  track: cs
+  kind: benchmark
+  blurb: "Dedicated benchmark for Overton-style pluralism."
+  conf: high
+- title: "Can Language Models Reason about Individualistic Human Values and Preferences?"
+  venue: null
+  year: 2024
+  vhint: aclanthology
+  url: https://arxiv.org/abs/2410.03868v2
+  modes: [steerable]
+  method: empirical
+  track: cs
+  kind: benchmark
+  blurb: "Tests LLM reasoning about individualistic values and preferences."
+  conf: high
+- title: "DailyDilemmas: Revealing Value Preferences of LLMs with Quandaries of Daily Life"
+  venue: null
+  year: 2024
+  vhint: arxiv
+  url: https://arxiv.org/abs/2410.02683v3
+  modes: [steerable]
+  method: empirical
+  track: cs
+  kind: benchmark
+  blurb: "Daily-life quandaries that reveal LLM value preferences."
+  conf: high
+- title: "ValueBench: Towards Comprehensively Evaluating Value Orientations and Understanding of Large Language Models"
+  venue: null
+  year: 2024
+  vhint: aclanthology
+  url: https://arxiv.org/abs/2406.04214v1
+  modes: [steerable]
+  method: empirical
+  track: cs
+  kind: benchmark
+  blurb: "Comprehensive evaluation of LLM value orientations."
+  conf: high
+- title: "ComPO: Community Preferences for Language Model Personalization"
+  venue: null
+  year: 2024
+  vhint: aclanthology
+  url: https://arxiv.org/abs/2410.16027v1
+  modes: [steerable]
+  method: empirical
+  track: cs
+  kind: dataset
+  blurb: "Community preference data for LM personalization."
+  conf: high
+- title: "EVALUESTEER: Measuring Reward Model Steerability Towards Values and Preferences"
+  venue: null
+  year: 2025
+  vhint: arxiv
+  url: https://arxiv.org/abs/2510.06370v2
+  modes: [steerable]
+  method: empirical
+  track: cs
+  kind: benchmark
+  blurb: "Measures how steerable reward models are toward values and preferences."
+  conf: high
+- title: "The PRISM Alignment Dataset: What Participatory, Representative and Individualised Human Feedback Reveals About the Subjective and Multicultural Alignment of Large Language Models"
+  venue: "NeurIPS"
+  year: null
+  vhint: neurips
+  url: https://arxiv.org/abs/2404.16019v2
+  modes: [distributional]
+  method: empirical
+  track: cs
+  kind: dataset
+  blurb: "Participatory, representative human-feedback dataset on subjective alignment."
+  conf: high
+- title: "A Sociotechnical Perspective on Aligning AI with Pluralistic Human Values"
+  venue: null
+  year: null
+  vhint: openreview
+  url: https://openreview.net/forum?id=oSRqZO2O2O
+  modes: [distributional]
+  method: na
+  track: cs
+  kind: position
+  blurb: "Sociotechnical framing of pluralistic value alignment."
+  conf: medium
+- title: "The Moral Integrity Corpus: A Benchmark for Ethical Dialogue Systems"
+  venue: null
+  year: 2020
+  vhint: aclanthology
+  url: https://arxiv.org/abs/2204.03021v1
+  modes: [distributional]
+  method: empirical
+  track: cs
+  kind: dataset
+  blurb: "Benchmark corpus for ethical dialogue systems."
+  conf: medium
+- title: "MID-Space: Aligning Diverse Communities' Needs to Inclusive Public Spaces"
+  venue: null
+  year: null
+  vhint: openreview
+  url: https://openreview.net/forum?id=kyfkMRT4Ao
+  modes: [distributional]
+  method: empirical
+  track: cs
+  kind: dataset
+  blurb: "Aligns diverse community needs for inclusive public spaces."
+  conf: high
+- title: "NoveltyBench: Evaluating Language Models for Humanlike Diversity"
+  venue: null
+  year: 2025
+  vhint: arxiv
+  url: https://arxiv.org/abs/2504.05228v4
+  modes: [distributional]
+  method: empirical
+  track: cs
+  kind: benchmark
+  blurb: "Evaluates humanlike output diversity; directly relevant to alignment-induced homogenization."
+  conf: high
+- title: "Benchmarking Distributional Alignment of Large Language Models"
+  venue: null
+  year: 2024
+  vhint: aclanthology
+  url: https://arxiv.org/abs/2411.05403v1
+  modes: [distributional]
+  method: empirical
+  track: cs
+  kind: benchmark
+  blurb: "Benchmark for distributional alignment of LLMs."
+  conf: high
+- title: "Adaptive Chameleon or Stubborn Sloth: Revealing the Behavior of Large Language Models in Knowledge Conflicts"
+  venue: null
+  year: 2023
+  vhint: arxiv
+  url: https://arxiv.org/abs/2305.13300v4
+  modes: [distributional]
+  method: empirical
+  track: cs
+  kind: benchmark
+  blurb: "Reveals LLM behavior under knowledge conflicts."
+  conf: high
+- title: "CIVICS: Building a Dataset for Examining Culturally-Informed Values in Large Language Models"
+  venue: "AAAI"
+  year: null
+  vhint: aaai
+  url: https://arxiv.org/abs/2405.13974v1
+  modes: [distributional]
+  method: empirical
+  track: cs
+  kind: dataset
+  blurb: "Dataset for culturally-informed values in LLMs."
+  conf: high
+- title: "NormBank: A Knowledge Bank of Situational Social Norms"
+  venue: null
+  year: 2023
+  vhint: aclanthology
+  url: https://arxiv.org/abs/2305.17008v2
+  modes: [distributional]
+  method: empirical
+  track: cs
+  kind: dataset
+  blurb: "Knowledge bank of situational social norms."
+  conf: high
+- title: "KorNAT: LLM Alignment Benchmark for Korean Social Values and Common Knowledge"
+  venue: null
+  year: 2024
+  vhint: aclanthology
+  url: https://arxiv.org/abs/2402.13605v7
+  modes: [distributional]
+  method: empirical
+  track: cs
+  kind: benchmark
+  blurb: "Korean social-values alignment benchmark (non-English coverage)."
+  conf: high
+- title: "Measuring Perceived Slant in Large Language Models Through User Evaluations"
+  venue: null
+  year: 2025
+  vhint: models slant
+  url: https://www.gsb.stanford.edu/faculty-research/working-papers/measuring-perceived-slant-large-language-models-through-user
+  modes: [distributional]
+  method: empirical
+  track: cs
+  kind: benchmark
+  blurb: "User evaluations of perceived political slant in LLMs."
+  conf: high
+- title: "Towards Measuring the Representation of Subjective Global Opinions in Language Models"
+  venue: null
+  year: 2023
+  vhint: arxiv
+  url: https://arxiv.org/abs/2306.16388v2
+  modes: [distributional]
+  method: empirical
+  track: cs
+  kind: benchmark
+  blurb: "Measures representation of subjective global opinions in LMs."
+  conf: high
+- title: "NepPlural: A Human-Anchored Benchmark for Persona Annotation in Nepali Migration Discourse"
+  venue: null
+  year: 2026
+  vhint: arxiv
+  url: https://arxiv.org/abs/2610.15732
+  modes: [distributional]
+  method: design_science
+  track: cs
+  kind: benchmark
+  blurb: "Human-annotated benchmark of competing personas in Nepali migration discourse; tests whether models represent non-Western value diversity."
+  conf: high
+
+# ---------------- SURVEYS ----------------
+- title: "A Survey on Personalized and Pluralistic Preference Alignment in Large Language Models"
+  venue: null
+  year: 2025
+  vhint: arxiv
+  url: https://arxiv.org/abs/2504.07070v1
+  modes: [all]
+  method: na
+  track: cs
+  kind: survey
+  blurb: "Survey of personalized and pluralistic preference alignment."
+  conf: high
+- title: "Personalization of Large Language Models: A Survey"
+  venue: null
+  year: 2024
+  vhint: arxiv
+  url: https://arxiv.org/abs/2411.00027v3
+  modes: [steerable]
+  method: na
+  track: cs
+  kind: survey
+  blurb: "Survey of LLM personalization (steerable pluralism adjacent)."
+  conf: high
+- title: "Survey of Cultural Awareness in Language Models: Text and Beyond"
+  venue: "MIT Press"
+  year: null
+  vhint: mit
+  url: https://arxiv.org/abs/2411.00860v1
+  modes: [steerable]
+  method: na
+  track: cs
+  kind: survey
+  blurb: "Survey of cultural awareness in language models."
+  conf: high
+- title: "Towards Scalable Automated Alignment of LLMs: A Survey"
+  venue: null
+  year: 2024
+  vhint: arxiv
+  url: https://arxiv.org/abs/2406.01252v3
+  modes: [all]
+  method: na
+  track: cs
+  kind: survey
+  blurb: "Survey of scalable automated alignment approaches."
+  conf: high
+- title: "Large Language Model Alignment: A Survey"
+  venue: null
+  year: 2023
+  vhint: arxiv
+  url: https://arxiv.org/abs/2309.15025v1
+  modes: [all]
+  method: na
+  track: cs
+  kind: survey
+  blurb: "Broad survey of LLM alignment."
+  conf: high
+- title: "AI Alignment: A Comprehensive Survey"
+  venue: null
+  year: 2023
+  vhint: arxiv
+  url: https://arxiv.org/abs/2310.19852v6
+  modes: [all]
+  method: na
+  track: cs
+  kind: survey
+  blurb: "Comprehensive survey of AI alignment."
+  conf: high
+- title: "Aligning Multimodal LLM with Human Preference: A Survey"
+  venue: null
+  year: 2025
+  vhint: arxiv
+  url: https://arxiv.org/abs/2503.14504v2
+  modes: [all]
+  method: na
+  track: cs
+  kind: survey
+  blurb: "Survey of multimodal LLM preference alignment."
+  conf: high
+- title: "Large Vision-Language Model Alignment and Misalignment: A Survey Through the Lens of Explainability"
+  venue: null
+  year: 2025
+  vhint: aclanthology
+  url: https://arxiv.org/abs/2501.01346v3
+  modes: [all]
+  method: na
+  track: cs
+  kind: survey
+  blurb: "Vision-language alignment survey through explainability."
+  conf: high
+- title: "A Survey of Progress in LLM Alignment from the Perspective of Reward Design"
+  venue: "IEEE"
+  year: null
+  vhint: ieee
+  url: https://doi.org/10.1109/tai.2026.3654921
+  modes: [all]
+  method: na
+  track: cs
+  kind: survey
+  blurb: "Reward-design perspective on alignment progress."
+  conf: high
