@@ -14,6 +14,7 @@ resolve missing canonical links, rebuild `README.md`, commit, and report.
 
 ```yaml
 - title: "Exact Paper Title"
+  authors: ["First Author", "Second Author"]   # full author list, or omit until resolved
   venue: "NeurIPS"            # or null if unknown/preprint
   year: 2025                 # or null if unknown
   vhint: arxiv               # where first seen: arxiv|aclanthology|openreview|neurips|aaai|acm|ieee|mit|city|...
@@ -66,6 +67,9 @@ resolve missing canonical links, rebuild `README.md`, commit, and report.
 4. **Backfill** — for entries with `url: null`, resolve the canonical URL: arXiv API exact-title
    search first, then ACL Anthology / publisher pages. Fill `venue`/`year` from the API record.
    Only set a URL you actually verified — never guess or construct one.
+   Also resolve missing `authors` lists (run `agents/fetch_authors.py` — it batches arXiv,
+   Crossref, and OpenReview lookups and only fills empty fields; entries it cannot resolve
+   stay blank, never guessed). Every NEW entry must get its author list resolved in the same run.
 5. **Classify** each new candidate per the rubric above; write a one-line neutral blurb.
 6. **Append** to `data/papers.yaml` (keep the section comments tidy), then run
    `python3 scripts/build_readme.py` and confirm it succeeds.
@@ -75,6 +79,11 @@ resolve missing canonical links, rebuild `README.md`, commit, and report.
    flagged `conf: low` for human review.
 9. **Report back to the user**: brief summary — new entries count, the 2–3 most notable papers,
    journal-track status, and any flags. Keep it short.
+   **Always end the report with the manual-push reminder**: read `agents/last_github_sync.txt`,
+   count local commits since that sync date (`git log --since=<date> --oneline | wc -l`), and add
+   one line: "Reminder: the public GitHub repo was last synced <date> and is <N> commits behind —
+   it stays stale until you ask for a manual sync." The local repo has no git remote; do NOT
+   attempt to push.
 
 ## Guardrails
 

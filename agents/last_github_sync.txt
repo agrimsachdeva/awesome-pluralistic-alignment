@@ -1,0 +1,8 @@
+2026-10-27
+Public repo https://github.com/agrimsachdeva/awesome-pluralistic-alignment was created via
+browser upload on 2026-10-25 and last synced via browser upload on 2026-10-27
+(local tree as of that date, 111 entries, table-format README).
+The local repo has NO git remote: bi-weekly updates commit locally only.
+Each run report must remind the user that the public repo is stale and needs a manual sync,
+including the number of local commits made after the date above.
+When a sync to GitHub happens, update the date in this file.
