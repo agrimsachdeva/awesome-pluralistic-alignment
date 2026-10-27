@@ -16,6 +16,7 @@ anything unverified:
 
 ```yaml
 - title: "Exact Paper Title"
+  authors: ["First Author", "Second Author"]   # full author list, or omit until resolved
   venue: "NeurIPS"        # or null
   year: 2025              # or null
   vhint: arxiv            # where you found it
