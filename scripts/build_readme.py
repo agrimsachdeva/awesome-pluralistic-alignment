@@ -2,8 +2,9 @@
 """Build README.md from data/papers.yaml.
 
 Usage: python3 scripts/build_readme.py
-Reads data/papers.yaml, renders the awesome list grouped by
-pluralism mode x research method, writes README.md.
+Reads data/papers.yaml, renders the awesome list grouped by pluralism mode x
+research method, with one table per category (Title | Year | Authors | Venue |
+Main contribution), and writes README.md.
 """
 import pathlib
 import yaml
@@ -31,36 +32,45 @@ METHODS = [
      "Novel artifacts: algorithms, training methods, decoding strategies, frameworks, and dataset/benchmark-as-artifact contributions, each with evaluation."),
 ]
 
-KIND_TAG = {"dataset": "dataset", "benchmark": "benchmark"}
+
+def esc(s):
+    return str(s).replace("|", "\\|").strip()
 
 
-def entry_line(e):
-    title = e["title"]
-    url = e.get("url")
-    head = f"**[{title}]({url})**" if url else f"**{title}**"
-    meta = []
-    if e.get("venue"):
-        meta.append(e["venue"])
-    if e.get("year"):
-        meta.append(str(e["year"]))
-    if e.get("kind") in KIND_TAG:
-        meta.append(f"`{KIND_TAG[e['kind']]}`")
-    if e.get("track") == "journals":
-        meta.append("journal track")
-    line = f"- {head}"
-    if meta:
-        line += " — " + ", ".join(meta)
-    if e.get("blurb"):
-        line += f". {e['blurb']}"
-    if not url:
-        line += " *(link pending)*"
-    return line
+def authors_cell(e):
+    a = e.get("authors") or []
+    if not a:
+        return "—"
+    if len(a) <= 3:
+        return esc(", ".join(a))
+    return esc(a[0]) + " et al."
+
+
+def table(rows):
+    out = ["| Title | Year | Authors | Venue | Main contribution |",
+           "|---|---|---|---|---|"]
+    for e in rows:
+        title = esc(e["title"])
+        url = e.get("url")
+        tcell = f"[{title}]({url})" if url else title
+        year = str(e["year"]) if e.get("year") else "—"
+        venue = esc(e["venue"]) if e.get("venue") else "—"
+        contrib = esc(e.get("blurb") or "")
+        if e.get("kind") in ("dataset", "benchmark"):
+            contrib = f"**{e['kind'].capitalize()}** — {contrib}"
+        out.append(f"| {tcell} | {year} | {authors_cell(e)} | {venue} | {contrib} |")
+    return out
+
+
+def by_year_title(e):
+    return (e.get("year") or 0, e["title"])
 
 
 def main():
     entries = yaml.safe_load(DATA.read_text())
     total = len(entries)
     with_links = sum(1 for e in entries if e.get("url"))
+    with_authors = sum(1 for e in entries if e.get("authors"))
     low_conf = [e for e in entries if e.get("conf") in ("low", "medium") and e.get("method") != "na"]
 
     L = []
@@ -124,21 +134,20 @@ def main():
             L.append("")
             L.append(f"_{mdesc}_")
             L.append("")
-            sub = [e for e in mode_entries if e.get("method") == mslug]
-            sub.sort(key=lambda e: (e.get("year") or 0, e["title"]))
+            sub = sorted([e for e in mode_entries if e.get("method") == mslug], key=by_year_title)
             if not sub:
                 L.append("_Nothing here yet — the updater agent is watching for it._")
+                L.append("")
             else:
-                L.extend(entry_line(e) for e in sub)
-            L.append("")
+                L.extend(table(sub))
+                L.append("")
 
     L.append("## Position papers & surveys")
     L.append("")
     L.append("_Foundational framings and surveys of pluralistic (and adjacent) alignment._")
     L.append("")
-    surv = [e for e in entries if e.get("kind") in ("survey", "position")]
-    surv.sort(key=lambda e: (e.get("year") or 0, e["title"]))
-    L.extend(entry_line(e) for e in surv)
+    surv = sorted([e for e in entries if e.get("kind") in ("survey", "position")], key=by_year_title)
+    L.extend(table(surv))
     L.append("")
     L.append("## Maintenance")
     L.append("")
@@ -147,10 +156,10 @@ def main():
     L.append("- Queries the arXiv API for new pluralistic-alignment work (all modes, both methods).")
     L.append("- Diffs the upstream community list for additions worth porting.")
     L.append("- Hunts the journal track (IS / ethics / behavioral venues) via scholarly APIs.")
-    L.append("- Classifies each candidate by mode × method, resolves canonical paper links, and rebuilds this README from `data/papers.yaml` (the source of truth).")
+    L.append("- Classifies each candidate by mode × method, resolves canonical paper links and author lists, and rebuilds this README from `data/papers.yaml` (the source of truth).")
     L.append("- Commits changes to git; every run is logged under `agents/runs/`.")
     L.append("")
-    L.append(f"_Stats: {total} entries · {with_links} with resolved links · "
+    L.append(f"_Stats: {total} entries · {with_links} with resolved links · {with_authors} with author lists · "
              f"{len(low_conf)} seed classifications flagged for verification · last built {date.today().isoformat()}._")
     L.append("")
     L.append("Contributions welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).")
