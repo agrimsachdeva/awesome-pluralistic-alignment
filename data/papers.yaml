@@ -1,13 +1,5 @@
-# Seed data for Awesome Pluralistic AI Alignment.
-# Schema per entry:
-#   title, venue, year, vhint (where the link was seen), url (canonical, backfilled by updater),
-#   modes: [overton|steerable|distributional|all], method: empirical|design_science|na,
-#   track: cs|journals, kind: method|dataset|benchmark|survey|position,
-#   blurb (one line), conf (classification confidence: high|medium|low)
-# Seed import: anudeex/Awesome-Pluralistic-Alignment (2026-10-02). URLs resolve on first updater run.
-
-# ---------------- OVERTON ----------------
 - title: "ReConcile: Round-Table Conference Improves Reasoning via Consensus among Diverse LLMs"
+  authors: ["Justin Chih-Yao Chen", "Swarnadeep Saha", "Mohit Bansal"]
   venue: "ICLR"
   year: 2024
   vhint: openreview
@@ -19,7 +11,8 @@
   blurb: "Multi-LLM round-table consensus that preserves diverse model views while improving reasoning."
   conf: high
 - title: "The Unlocking Spell on Base LLMs: Rethinking Alignment via In-Context Learning"
-  venue: null
+  authors: ["Bill Yuchen Lin", "Abhilasha Ravichander", "Ximing Lu", "Nouha Dziri", "Melanie Sclar", "Khyathi Chandu", "Chandra Bhagavatula", "Yejin Choi"]
+  venue: "arXiv"
   year: 2023
   vhint: arxiv
   url: https://arxiv.org/abs/2312.01552v1
@@ -30,7 +23,8 @@
   blurb: "Shows base models can surface diverse value stances through in-context learning alone."
   conf: medium
 - title: "From Distributional to Overton Pluralism: Investigating Large Language Model Alignment"
-  venue: null
+  authors: ["Thom Lake", "Eunsol Choi", "Greg Durrett"]
+  venue: "arXiv"
   year: 2024
   vhint: aclanthology
   url: https://arxiv.org/abs/2406.17692v2
@@ -41,7 +35,8 @@
   blurb: "Investigates how alignment shifts models between distributional and Overton-style pluralism."
   conf: high
 - title: "Large Language Models as Optimizers"
-  venue: null
+  authors: ["Chengrun Yang", "Xuezhi Wang", "Yifeng Lu", "Hanxiao Liu", "Quoc V. Le", "Denny Zhou", "Xinyun Chen"]
+  venue: "arXiv"
   year: 2023
   vhint: openreview
   url: https://arxiv.org/abs/2309.03409v3
@@ -52,7 +47,8 @@
   blurb: "Optimization-style prompting that aggregates diverse candidate solutions."
   conf: high
 - title: "PICACO: Pluralistic In-Context Value Alignment of LLMs via Total Correlation Optimization"
-  venue: null
+  authors: ["Han Jiang", "Dongyao Zhu", "Xiaoyuan Yi", "Ziang Xiao", "Zhihua Wei", "Xing Xie"]
+  venue: "arXiv"
   year: 2025
   vhint: arxiv
   url: https://arxiv.org/abs/2507.16679v4
@@ -63,7 +59,8 @@
   blurb: "In-context value alignment via total correlation optimization across plural values."
   conf: high
 - title: "MaxMin-RLHF: Alignment with Diverse Human Preferences"
-  venue: null
+  authors: ["Souradip Chakraborty", "Jiahao Qiu", "Hui Yuan", "Alec Koppel", "Furong Huang", "Dinesh Manocha", "Amrit Singh Bedi", "Mengdi Wang"]
+  venue: "arXiv"
   year: 2024
   vhint: arxiv
   url: https://arxiv.org/abs/2402.08925v2
@@ -74,7 +71,8 @@
   blurb: "Rawlsian max-min RLHF objective that protects worst-off preference groups."
   conf: high
 - title: "Black-Box Prompt Optimization: Aligning Large Language Models without Model Training"
-  venue: null
+  authors: ["Jiale Cheng", "Xiao Liu", "Kehan Zheng", "Pei Ke", "Hongning Wang", "Yuxiao Dong", "Jie Tang", "Minlie Huang"]
+  venue: "arXiv"
   year: 2023
   vhint: aclanthology
   url: https://arxiv.org/abs/2311.04155v3
@@ -85,7 +83,8 @@
   blurb: "Aligns models to plural objectives by optimizing prompts, no training required."
   conf: high
 - title: "Policy Prototyping for LLMs: Pluralistic Alignment via Interactive and Collaborative Policymaking"
-  venue: null
+  authors: ["K. J. Kevin Feng", "Inyoung Cheong", "Quan Ze Chen", "Amy X. Zhang"]
+  venue: "arXiv"
   year: 2024
   vhint: arxiv
   url: https://arxiv.org/abs/2409.08622v2
@@ -96,7 +95,8 @@
   blurb: "Interactive, collaborative policymaking process for specifying pluralistic model behavior."
   conf: high
 - title: "Reflective Verbal Reward Design for Pluralistic Alignment"
-  venue: null
+  authors: ["Carter Blair", "Kate Larson", "Edith Law"]
+  venue: "arXiv"
   year: 2025
   vhint: arxiv
   url: https://arxiv.org/abs/2506.17834v1
@@ -107,7 +107,8 @@
   blurb: "Uses verbal self-reflection to design rewards covering plural values."
   conf: medium
 - title: "Beyond the Monolithic Interface: A Research Agenda for Plural Conversational AI"
-  venue: null
+  authors: ["Avijit Ghosh", "Afifah Kashif", "Isabelle Kohout", "Zhenzhen Qi"]
+  venue: "arXiv"
   year: 2026
   vhint: arxiv
   url: https://arxiv.org/abs/2610.12878
@@ -118,6 +119,7 @@
   blurb: "Research agenda proposing multi-persona conversational AI interfaces as an alternative to the single-voice chatbot."
   conf: medium
 - title: "Authority locking vs. pluralistic sourcing in generative search: evidence compression beyond top-spot displacement"
+  authors: ["Chiang-Yu Cheng"]
   venue: Electronic Commerce Research
   year: 2026
   vhint: crossref
@@ -129,6 +131,7 @@
   blurb: "Studies whether generative-search citations mirror organic rankings or reflect a distinct, pluralistic source-selection logic."
   conf: low
 - title: "A pluralistic view on AI ethics: perspectives from Buen Vivir"
+  authors: ["Dorine Eva van Norren"]
   venue: AI and Ethics
   year: 2026
   vhint: crossref
@@ -142,7 +145,8 @@
 
 # ---------------- STEERABLE ----------------
 - title: "Not All Countries Celebrate Thanksgiving: On the Cultural Dominance in Large Language Models"
-  venue: null
+  authors: ["Wenxuan Wang", "Wenxiang Jiao", "Jingyuan Huang", "Ruyi Dai", "Jen-tse Huang", "Zhaopeng Tu", "Michael R. Lyu"]
+  venue: "arXiv"
   year: 2023
   vhint: aclanthology
   url: https://arxiv.org/abs/2310.12481v2
@@ -153,7 +157,8 @@
   blurb: "Documents US-centric cultural dominance in LLM outputs."
   conf: high
 - title: "Cultural Alignment in Large Language Models: An Explanatory Analysis Based on Hofstede's Cultural Dimensions"
-  venue: null
+  authors: ["Reem I. Masoud", "Ziquan Liu", "Martin Ferianc", "Philip Treleaven", "Miguel Rodrigues"]
+  venue: "arXiv"
   year: 2023
   vhint: aclanthology
   url: https://arxiv.org/abs/2309.12342v2
@@ -164,7 +169,8 @@
   blurb: "Explains LLM cultural alignment through Hofstede's cultural dimensions."
   conf: high
 - title: "CULTURE-GEN: Revealing Global Cultural Perception in Language Models through Natural Language Prompting"
-  venue: null
+  authors: ["Huihan Li", "Liwei Jiang", "Jena D. Hwang", "Hyunwoo Kim", "Sebastin Santy", "Taylor Sorensen", "Bill Yuchen Lin", "Nouha Dziri", "Xiang Ren", "Yejin Choi"]
+  venue: "arXiv"
   year: 2024
   vhint: arxiv
   url: https://arxiv.org/abs/2404.10199v5
@@ -175,7 +181,8 @@
   blurb: "Probes global cultural perception in LMs via natural-language prompting."
   conf: high
 - title: "Evaluating Cultural Adaptability of a Large Language Model via Simulation of Synthetic Personas"
-  venue: null
+  authors: ["Louis Kwok", "Michal Bravansky", "Lewis D. Griffin"]
+  venue: "arXiv"
   year: 2024
   vhint: arxiv
   url: https://arxiv.org/abs/2408.06929v1
@@ -186,6 +193,7 @@
   blurb: "Simulates synthetic personas to test LLM cultural adaptability."
   conf: high
 - title: "PERSONA: A Reproducible Testbed for Pluralistic Alignment"
+  authors: ["Louis Castricato", "Nathan Lile", "Rafael Rafailov", "Jan-Philipp Fränken", "Chelsea Finn"]
   venue: "COLING"
   year: 2025
   vhint: aclanthology
@@ -197,8 +205,9 @@
   blurb: "Reproducible testbed with synthetic personas for pluralistic alignment research."
   conf: high
 - title: "Evaluating and Inducing Personality in Pre-trained Language Models"
+  authors: ["Guangyuan Jiang", "Manjie Xu", "Song-Chun Zhu", "Wenjuan Han", "Chi Zhang", "Yixin Zhu"]
   venue: "NeurIPS"
-  year: null
+  year: 2022
   vhint: neurips
   url: https://arxiv.org/abs/2206.07550v3
   modes: [steerable, distributional]
@@ -208,7 +217,8 @@
   blurb: "Tests whether stable personality traits can be induced in pretrained LMs."
   conf: high
 - title: "SPICA: Retrieving Scenarios for Pluralistic In-Context Alignment"
-  venue: null
+  authors: ["Quan Ze Chen", "K. J. Kevin Feng", "Chan Young Park", "Amy X. Zhang"]
+  venue: "arXiv"
   year: 2024
   vhint: aclanthology
   url: https://arxiv.org/abs/2411.10912v2
@@ -219,7 +229,8 @@
   blurb: "Retrieval of scenarios to ground pluralistic in-context alignment."
   conf: high
 - title: "Language Models are Alignable Decision-Makers: Dataset and Application to the Medical Triage Domain"
-  venue: null
+  authors: ["Brian Hu", "Bill Ray", "Alice Leung", "Amy Summerville", "David Joy", "Christopher Funk", "Arslan Basharat"]
+  venue: "arXiv"
   year: 2024
   vhint: aclanthology
   url: https://arxiv.org/abs/2406.06435v1
@@ -230,7 +241,8 @@
   blurb: "Dataset and demo of steerable alignment for medical triage decisions."
   conf: medium
 - title: "Steerable Pluralism: Pluralistic Alignment via Few-Shot Comparative Regression"
-  venue: null
+  authors: ["Jadie Adams", "Brian Hu", "Emily Veenhuis", "David Joy", "Bharadwaj Ravichandran", "Aaron Bray", "Anthony Hoogs", "Arslan Basharat"]
+  venue: "arXiv"
   year: 2025
   vhint: arxiv
   url: https://arxiv.org/abs/2508.08509v1
@@ -241,7 +253,8 @@
   blurb: "Few-shot comparative regression to steer pluralistic value expression."
   conf: high
 - title: "Exploring Chain-of-Thought Reasoning for Steerable Pluralistic Alignment"
-  venue: null
+  authors: ["Yunfan Zhang", "Kathleen McKeown", "Smaranda Muresan"]
+  venue: "arXiv"
   year: 2025
   vhint: aclanthology
   url: https://arxiv.org/abs/2510.04045v1
@@ -252,7 +265,8 @@
   blurb: "Studies chain-of-thought as a lever for steerable pluralism."
   conf: medium
 - title: "NormAd: A Framework for Measuring the Cultural Adaptability of Large Language Models"
-  venue: null
+  authors: ["Abhinav Rao", "Akhila Yerukola", "Vishwa Shah", "Katharina Reinecke", "Maarten Sap"]
+  venue: "arXiv"
   year: 2024
   vhint: aclanthology
   url: https://arxiv.org/abs/2404.12464v10
@@ -263,7 +277,8 @@
   blurb: "Framework measuring how well LLMs adapt to cultural norms."
   conf: high
 - title: "Personality Alignment of Large Language Models"
-  venue: null
+  authors: ["Minjun Zhu", "Yixuan Weng", "Linyi Yang", "Yue Zhang"]
+  venue: "arXiv"
   year: 2024
   vhint: arxiv
   url: https://arxiv.org/abs/2408.11779v2
@@ -274,7 +289,8 @@
   blurb: "Trains personality-conditioned alignment into LLMs."
   conf: high
 - title: "Self-Pluralising Culture Alignment for Large Language Models"
-  venue: null
+  authors: ["Shaoyang Xu", "Yongqi Leng", "Linhao Yu", "Deyi Xiong"]
+  venue: "arXiv"
   year: 2024
   vhint: aclanthology
   url: https://arxiv.org/abs/2410.12971v1
@@ -285,7 +301,8 @@
   blurb: "Self-generates cultural perspectives to broaden alignment coverage."
   conf: high
 - title: "CultureBank: An Online Community-Driven Knowledge Base Towards Culturally Aware Language Technologies"
-  venue: null
+  authors: ["Weiyan Shi", "Ryan Li", "Yutong Zhang", "Caleb Ziems", "Chunhua yu", "Raya Horesh", "Rogério Abreu de Paula", "Diyi Yang"]
+  venue: "arXiv"
   year: 2024
   vhint: aclanthology
   url: https://arxiv.org/abs/2404.15238v1
@@ -296,8 +313,9 @@
   blurb: "Community-driven cultural knowledge base as an alignment resource."
   conf: high
 - title: "CulturePark: Boosting Cross-cultural Understanding in Large Language Models"
+  authors: ["Cheng Li", "Damien Teney", "Linyi Yang", "Qingsong Wen", "Xing Xie", "Jindong Wang"]
   venue: "NeurIPS"
-  year: null
+  year: 2024
   vhint: neurips
   url: https://arxiv.org/abs/2405.15145v3
   modes: [steerable]
@@ -307,7 +325,8 @@
   blurb: "Multi-agent cross-cultural dialogue to boost cultural understanding."
   conf: high
 - title: "From Values to Opinions: Predicting Human Behaviors and Stances Using Value-Injected Large Language Models"
-  venue: null
+  authors: ["Dongjun Kang", "Joonsuk Park", "Yohan Jo", "JinYeong Bak"]
+  venue: "arXiv"
   year: 2023
   vhint: aclanthology
   url: https://arxiv.org/abs/2310.17857v1
@@ -318,6 +337,7 @@
   blurb: "Evaluates whether value-injected LMs predict human stances and behaviors."
   conf: low
 - title: "Value FULCRA: Mapping Large Language Models to the Multidimensional Spectrum of Basic Human Value"
+  authors: ["Jing Yao", "Xiaoyuan Yi", "Yifan Gong", "Xiting Wang", "Xing Xie"]
   venue: "NAACL"
   year: 2024
   vhint: aclanthology
@@ -329,7 +349,8 @@
   blurb: "Maps LLMs onto the multidimensional spectrum of basic human values."
   conf: high
 - title: "LoRe: Personalizing LLMs via Low-Rank Reward Modeling"
-  venue: null
+  authors: ["Avinandan Bose", "Zhihan Xiong", "Yuejie Chi", "Simon Shaolei Du", "Lin Xiao", "Maryam Fazel"]
+  venue: "arXiv"
   year: 2025
   vhint: arxiv
   url: https://arxiv.org/abs/2504.14439v1
@@ -340,7 +361,8 @@
   blurb: "Low-rank reward modeling for efficient LLM personalization."
   conf: high
 - title: "Value Alignment from Unstructured Text"
-  venue: null
+  authors: ["Inkit Padhi", "Karthikeyan Natesan Ramamurthy", "Prasanna Sattigeri", "Manish Nagireddy", "Pierre Dognin", "Kush R. Varshney"]
+  venue: "arXiv"
   year: 2024
   vhint: aclanthology
   url: https://arxiv.org/abs/2408.10392v1
@@ -351,7 +373,8 @@
   blurb: "Extracts alignment signal for steerable values from unstructured text."
   conf: high
 - title: "Counterfactual Reasoning for Steerable Pluralistic Value Alignment of Large Language Models"
-  venue: null
+  authors: ["Hanze Guo", "Jing Yao", "Xiao Zhou", "Xiaoyuan Yi", "Xing Xie"]
+  venue: "arXiv"
   year: 2025
   vhint: arxiv
   url: https://arxiv.org/abs/2510.18526v2
@@ -362,7 +385,8 @@
   blurb: "Counterfactual reasoning as a mechanism for steerable value alignment."
   conf: high
 - title: "Are the Values of LLMs Structurally Aligned with Humans? A Causal Perspective"
-  venue: null
+  authors: ["Yipeng Kang", "Junqi Wang", "Yexin Li", "Mengmeng Wang", "Wenming Tu", "Quansen Wang", "Hengli Li", "Tingjun Wu", "Xue Feng", "Fangwei Zhong", "Zilong Zheng"]
+  venue: "arXiv"
   year: 2024
   vhint: aclanthology
   url: https://arxiv.org/abs/2501.00581v2
@@ -373,8 +397,9 @@
   blurb: "Causal analysis of structural alignment between LLM and human values."
   conf: high
 - title: "CultureLLM: Incorporating Cultural Differences into Large Language Models"
+  authors: ["Cheng Li", "Mengzhou Chen", "Jindong Wang", "Sunayana Sitaram", "Xing Xie"]
   venue: "NeurIPS"
-  year: null
+  year: 2024
   vhint: neurips
   url: https://arxiv.org/abs/2402.10946v3
   modes: [steerable]
@@ -384,7 +409,8 @@
   blurb: "Culture-specific tuning to incorporate cultural differences."
   conf: high
 - title: "Arithmetic Control of LLMs for Diverse User Preferences: Directional Preference Alignment with Multi-Objective Rewards"
-  venue: null
+  authors: ["Haoxiang Wang", "Yong Lin", "Wei Xiong", "Rui Yang", "Shizhe Diao", "Shuang Qiu", "Han Zhao", "Tong Zhang"]
+  venue: "arXiv"
   year: 2024
   vhint: aclanthology
   url: https://arxiv.org/abs/2402.18571v3
@@ -395,7 +421,8 @@
   blurb: "Multi-objective reward arithmetic for serving diverse user preferences."
   conf: high
 - title: "SteerLM: Attribute Conditioned SFT as an (User-Steerable) Alternative to RLHF"
-  venue: null
+  authors: ["Yi Dong", "Zhilin Wang", "Makesh Narsimhan Sreedhar", "Xianchao Wu", "Oleksii Kuchaiev"]
+  venue: "arXiv"
   year: 2024
   vhint: aclanthology
   url: https://arxiv.org/abs/2310.05344v1
@@ -406,7 +433,8 @@
   blurb: "Attribute-conditioned SFT as a steerable alternative to RLHF."
   conf: high
 - title: "Interpretable Preferences via Multi-Objective Reward Modeling and Mixture-of-Experts"
-  venue: null
+  authors: ["Haoxiang Wang", "Wei Xiong", "Tengyang Xie", "Han Zhao", "Tong Zhang"]
+  venue: "arXiv"
   year: 2024
   vhint: aclanthology
   url: https://arxiv.org/abs/2406.12845v1
@@ -417,7 +445,8 @@
   blurb: "Mixture-of-experts reward models for interpretable plural preferences."
   conf: high
 - title: "Few-shot Steerable Alignment: Adapting Rewards and LLM Policies with Neural Processes"
-  venue: null
+  authors: ["Katarzyna Kobalczyk", "Claudio Fanconi", "Hao Sun", "Mihaela van der Schaar"]
+  venue: "arXiv"
   year: 2024
   vhint: arxiv
   url: https://arxiv.org/abs/2412.13998v1
@@ -428,7 +457,8 @@
   blurb: "Neural processes adapt rewards and policies to new principals few-shot."
   conf: high
 - title: "Robust Multi-Objective Controlled Decoding of Large Language Models"
-  venue: null
+  authors: ["Seongho Son", "William Bankes", "Sangwoong Yoon", "Shyam Sundhar Ramesh", "Xiaohang Tang", "Ilija Bogunovic"]
+  venue: "arXiv"
   year: 2025
   vhint: arxiv
   url: https://arxiv.org/abs/2503.08796v2
@@ -439,8 +469,9 @@
   blurb: "Decoding-time multi-objective control robust to preference shifts."
   conf: high
 - title: "Aligning Machiavellian Agents: Behavior Steering via Test-Time Policy Shaping"
+  authors: ["Dena Mujtaba", "Brian Hu", "Anthony Hoogs", "Arslan Basharat"]
   venue: "AAAI"
-  year: null
+  year: 2025
   vhint: aaai
   url: https://arxiv.org/abs/2511.11551v3
   modes: [steerable]
@@ -461,7 +492,8 @@
   blurb: "Conditional multi-objective preference optimization for steerability."
   conf: medium
 - title: "Controllable Preference Optimization: Toward Controllable Multi-Objective Alignment"
-  venue: null
+  authors: ["Yiju Guo", "Ganqu Cui", "Lifan Yuan", "Ning Ding", "Zexu Sun", "Bowen Sun", "Huimin Chen", "Ruobing Xie", "Jie Zhou", "Yankai Lin", "Zhiyuan Liu", "Maosong Sun"]
+  venue: "arXiv"
   year: 2024
   vhint: aclanthology
   url: https://arxiv.org/abs/2402.19085v3
@@ -472,8 +504,9 @@
   blurb: "Preference optimization with explicit controllability over objectives."
   conf: high
 - title: "Aligning to Thousands of Preferences via System Message Generalization"
+  authors: ["Seongyun Lee", "Sue Hyun Park", "Seungone Kim", "Minjoon Seo"]
   venue: "NeurIPS"
-  year: null
+  year: 2024
   vhint: neurips
   url: https://arxiv.org/abs/2405.17977v2
   modes: [steerable]
@@ -485,8 +518,9 @@
 
 # ---------------- DISTRIBUTIONAL ----------------
 - title: "Distributional Alignment for Social Simulation with LLMs: A Prompt Mixture Modeling Approach"
-  venue: null
-  year: null
+  authors: ["Yutong Xie", "Ruoyi Gao", "Qiaozhu Mei"]
+  venue: "KDD"
+  year: 2026
   vhint: openreview
   url: https://openreview.net/forum?id=6KM1siLL8a
   modes: [distributional]
@@ -496,7 +530,8 @@
   blurb: "Prompt-mixture modeling for distributional social simulation."
   conf: high
 - title: "OASIS: Open Agent Social Interaction Simulations with One Million Agents"
-  venue: null
+  authors: ["Ziyi Yang", "Zaibin Zhang", "Zirui Zheng", "Yuxian Jiang", "Ziyue Gan", "Zhiyu Wang", "Zijian Ling", "Jinsong Chen", "Martz Ma", "Bowen Dong", "Prateek Gupta", "Shuyue Hu", "Zhenfei Yin", "Guohao Li", "Xu Jia", "Lijun Wang", "Bernard Ghanem", "Huchuan Lu", "Chaochao Lu", "Wanli Ouyang", "Yu Qiao", "Philip Torr", "Jing Shao"]
+  venue: "arXiv"
   year: 2024
   vhint: arxiv
   url: https://arxiv.org/abs/2411.11581v5
@@ -507,6 +542,7 @@
   blurb: "Million-agent simulation testbed for studying emergent social distributions."
   conf: high
 - title: "Social Simulacra: Creating Populated Prototypes for Social Computing Systems"
+  authors: ["Joon Sung Park", "Lindsay Popowski", "Carrie J. Cai", "Meredith Ringel Morris", "Percy Liang", "Michael S. Bernstein"]
   venue: "ACM"
   year: 2022
   vhint: acm
@@ -518,7 +554,8 @@
   blurb: "Populated prototypes that simulate community-level behavior distributions."
   conf: medium
 - title: "Specializing Large Language Models to Simulate Survey Response Distributions for Global Populations"
-  venue: null
+  authors: ["Yong Cao", "Haijiang Liu", "Arnav Arora", "Isabelle Augenstein", "Paul Röttger", "Daniel Hershcovich"]
+  venue: "arXiv"
   year: 2025
   vhint: aclanthology
   url: https://arxiv.org/abs/2502.07068v2
@@ -529,7 +566,8 @@
   blurb: "Tunes LMs to reproduce global survey response distributions."
   conf: high
 - title: "Self-Alignment: Improving Alignment of Cultural Values in LLMs via In-Context Learning"
-  venue: null
+  authors: ["Rochelle Choenni", "Ekaterina Shutova"]
+  venue: "arXiv"
   year: 2024
   vhint: arxiv
   url: https://arxiv.org/abs/2408.16482v2
@@ -540,7 +578,8 @@
   blurb: "In-context self-alignment of cultural value distributions."
   conf: high
 - title: "MixDPO: Modeling Preference Strength for Pluralistic Alignment"
-  venue: null
+  authors: ["Saki Imai", "Pedram Heydari", "Anthony Sicilia", "Asteria Kaeberlein", "Katherine Atwell", "Malihe Alikhani"]
+  venue: "arXiv"
   year: 2026
   vhint: arxiv
   url: https://arxiv.org/abs/2601.06180v1
@@ -551,7 +590,8 @@
   blurb: "DPO variant modeling dispersion in preference strength."
   conf: high
 - title: "Pairwise Calibrated Rewards for Pluralistic Alignment"
-  venue: null
+  authors: ["Daniel Halpern", "Evi Micha", "Ariel D. Procaccia", "Itai Shapira"]
+  venue: "arXiv"
   year: 2025
   vhint: arxiv
   url: https://arxiv.org/abs/2506.06298v1
@@ -562,8 +602,9 @@
   blurb: "Calibrated pairwise rewards that preserve preference heterogeneity."
   conf: high
 - title: "Imitation Beyond Expectation Using Pluralistic Stochastic Dominance"
-  venue: null
-  year: null
+  authors: ["Ali Farajzadeh", "Danyal Saeed", "Syed M Abbas", "Rushit Shah", "Aadirupa Saha", "Brian Ziebart"]
+  venue: "NeurIPS 2025"
+  year: 2025
   vhint: openreview
   url: https://openreview.net/forum?id=YX5DHa9OfX
   modes: [distributional]
@@ -573,8 +614,9 @@
   blurb: "Imitation learning under pluralistic stochastic dominance criteria."
   conf: high
 - title: "Group Robust Preference Optimization in Reward-free RLHF"
+  authors: ["Shyam Sundhar Ramesh", "Yifan Hu", "Iason Chaimalas", "Viraj Mehta", "Pier Giuseppe Sessa", "Haitham Bou Ammar", "Ilija Bogunovic"]
   venue: "NeurIPS"
-  year: null
+  year: 2024
   vhint: neurips
   url: https://arxiv.org/abs/2405.20304v1
   modes: [distributional]
@@ -584,7 +626,8 @@
   blurb: "Group-robust preference optimization without reward models."
   conf: high
 - title: "Language Model Fine-Tuning on Scaled Survey Data for Predicting Distributions of Public Opinions"
-  venue: null
+  authors: ["Joseph Suh", "Erfan Jahanparast", "Suhong Moon", "Minwoo Kang", "Serina Chang"]
+  venue: "arXiv"
   year: 2025
   vhint: aclanthology
   url: https://arxiv.org/abs/2502.16761v2
@@ -595,7 +638,8 @@
   blurb: "Fine-tunes on scaled survey data to predict public-opinion distributions."
   conf: high
 - title: "MallowsPO: Fine-Tune Your LLM with Preference Dispersions"
-  venue: null
+  authors: ["Haoxian Chen", "Hanyang Zhao", "Henry Lam", "David Yao", "Wenpin Tang"]
+  venue: "arXiv"
   year: 2024
   vhint: arxiv
   url: https://arxiv.org/abs/2405.14953v5
@@ -606,7 +650,8 @@
   blurb: "Preference optimization with Mallows-modeled preference dispersion."
   conf: high
 - title: "Aligning Crowd Feedback via Distributional Preference Reward Modeling"
-  venue: null
+  authors: ["Dexun Li", "Cong Zhang", "Kuicai Dong", "Derrick Goh Xin Deik", "Ruiming Tang", "Yong Liu"]
+  venue: "arXiv"
   year: 2024
   vhint: arxiv
   url: https://arxiv.org/abs/2402.09764v3
@@ -617,7 +662,8 @@
   blurb: "Distributional reward modeling for heterogeneous crowd feedback."
   conf: high
 - title: "PAL: Pluralistic Alignment Framework for Learning from Heterogeneous Preferences"
-  venue: null
+  authors: ["Daiwei Chen", "Yi Chen", "Aniket Rege", "Ramya Korlakai Vinayak"]
+  venue: "arXiv"
   year: 2024
   vhint: arxiv
   url: https://arxiv.org/abs/2406.08469v1
@@ -628,6 +674,7 @@
   blurb: "Framework for learning from heterogeneous preference data."
   conf: high
 - title: "The Pluralistic Moral Gap: Understanding Moral Judgment and Value Differences between Humans and Large Language Models"
+  authors: ["Giuseppe Russo", "Debora Nozza", "Paul Röttger", "Dirk Hovy"]
   venue: "EACL"
   year: 2026
   vhint: aclanthology
@@ -639,7 +686,8 @@
   blurb: "Compares human and LLM moral-judgment distributions to quantify the gap."
   conf: high
 - title: "Language Model Alignment in Multilingual Trolley Problems"
-  venue: null
+  authors: ["Zhijing Jin", "Max Kleiman-Weiner", "Giorgio Piatti", "Sydney Levine", "Jiarui Liu", "Fernando Gonzalez", "Francesco Ortu", "András Strausz", "Mrinmaya Sachan", "Rada Mihalcea", "Yejin Choi", "Bernhard Schölkopf"]
+  venue: "arXiv"
   year: 2024
   vhint: arxiv
   url: https://arxiv.org/abs/2407.02273v6
@@ -650,8 +698,9 @@
   blurb: "Multilingual moral-dilemma benchmark for alignment evaluation."
   conf: high
 - title: "PluralLLM: Pluralistic Alignment in LLMs via Federated Learning"
+  authors: ["Mahmoud Srewa", "Tianyu Zhao", "Salma Elmalaki"]
   venue: "ACM"
-  year: null
+  year: 2025
   vhint: acm
   url: https://arxiv.org/abs/2503.09925v1
   modes: [distributional]
@@ -661,7 +710,8 @@
   blurb: "Federated learning to keep pluralistic preference data decentralized."
   conf: high
 - title: "Improving the Distributional Alignment of LLMs using Supervision"
-  venue: null
+  authors: ["Gauri Kambhatla", "Sanjana Gautam", "Angela Zhang", "Alex Liu", "Ravi Srinivasan", "Junyi Jessy Li", "Matthew Lease"]
+  venue: "arXiv"
   year: 2025
   vhint: arxiv
   url: https://arxiv.org/abs/2507.00439v4
@@ -672,7 +722,8 @@
   blurb: "Supervised techniques to improve distributional alignment."
   conf: high
 - title: "Who Should We Listen to More? Welfare-Aware Preference Acquisition for Pluralistic Alignment"
-  venue: null
+  authors: ["Ruomeng Ding", "Tianwei Gao", "Lianrui Geng", "Mohit Bansal", "Zhun Deng"]
+  venue: "arXiv"
   year: 2026
   vhint: arxiv
   url: https://arxiv.org/abs/2610.19035
@@ -683,6 +734,7 @@
   blurb: "Defines a social-welfare objective for allocating human feedback across people when training for pluralistic alignment."
   conf: high
 - title: "Algorithmic canonization: AI and art history through an Asian lens"
+  authors: ["Uğur Kocager", "Ebru Yetiskin"]
   venue: AI & SOCIETY
   year: 2026
   vhint: crossref
@@ -694,6 +746,7 @@
   blurb: "Systematic review of the AI-and-art-history literature; introduces 'algorithmic canonization' to describe how AI systems standardize what is remembered."
   conf: low
 - title: "Generative AI and the homogenization of analyst forecasts"
+  authors: ["Jianxiang Zhang", "Xinzi Xia"]
   venue: Finance Research Letters
   year: 2026
   vhint: crossref
@@ -705,6 +758,7 @@
   blurb: "Empirical study of generative AI's effect on the diversity of analyst forecasts."
   conf: low
 - title: "The Algorithmic Flattening of Sound: Computational Evidence and Justice Implications of AI Music Homogenization"
+  authors: ["Zoe Slendebroek", "Danaé Metaxa"]
   venue: AIES
   year: 2026
   vhint: crossref
@@ -718,6 +772,7 @@
 
 # ---------------- CROSS-CUTTING (ALL MODES) ----------------
 - title: "Pluralistic Alignment for Healthcare: A Role-Driven Framework"
+  authors: ["Jiayou Zhong", "Anudeex Shetty", "Chao Jia", "Xuanrui Lin", "Usman Naseem"]
   venue: "EMNLP"
   year: 2025
   vhint: aclanthology
@@ -729,7 +784,8 @@
   blurb: "Role-driven pluralistic alignment framework for the healthcare domain."
   conf: high
 - title: "VISPA: Pluralistic Alignment via Automatic Value Selection and Activation"
-  venue: null
+  authors: ["Shenyan Zheng", "Jiayou Zhong", "Anudeex Shetty", "Heng Ji", "Preslav Nakov", "Usman Naseem"]
+  venue: "arXiv"
   year: 2026
   vhint: arxiv
   url: https://arxiv.org/abs/2601.12758v2
@@ -740,8 +796,8 @@
   blurb: "Automatically selects and activates relevant values at inference time."
   conf: high
 - title: "Group Robust Best-of-K Decoding of Language Models for Pluralistic Alignment"
-  venue: null
-  year: null
+  venue: "NeurIPS 2024 Pluralistic Alignment Workshop"
+  year: 2024
   vhint: openreview
   url: https://openreview.net/forum?id=JI6j4NUGHv
   modes: [all]
@@ -751,6 +807,7 @@
   blurb: "Group-robust best-of-K decoding that protects minority preference groups."
   conf: high
 - title: "Modular Pluralism: Pluralistic Alignment via Multi-LLM Collaboration"
+  authors: ["Shangbin Feng", "Taylor Sorensen", "Yuhan Liu", "Jillian Fisher", "Chan Young Park", "Yejin Choi", "Yulia Tsvetkov"]
   venue: "EMNLP"
   year: 2024
   vhint: aclanthology
@@ -762,7 +819,8 @@
   blurb: "Multi-LLM collaboration where specialized models jointly serve pluralism."
   conf: high
 - title: "Cultural Palette: Pluralising Culture Alignment via Multi-agent Palette"
-  venue: null
+  authors: ["Jiahao Yuan", "Zixiang Di", "Shangzixin Zhao", "Zhiqing Cui", "Hanqing Wang", "Guisong Yang", "Usman Naseem"]
+  venue: "arXiv"
   year: 2024
   vhint: arxiv
   url: https://arxiv.org/abs/2412.11167v4
@@ -773,6 +831,7 @@
   blurb: "Multi-agent palette approach to pluralising cultural alignment."
   conf: high
 - title: "A Roadmap to Pluralistic Alignment"
+  authors: ["Taylor Sorensen", "Jared Moore", "Jillian Fisher", "Mitchell Gordon", "Niloofar Mireshghallah", "Christopher Michael Rytting", "Andre Ye", "Liwei Jiang", "Ximing Lu", "Nouha Dziri", "Tim Althoff", "Yejin Choi"]
   venue: "ICML"
   year: 2024
   vhint: arxiv
@@ -784,7 +843,8 @@
   blurb: "Foundational roadmap defining the Overton / steerable / distributional taxonomy."
   conf: high
 - title: "Fine-tuning language models to find agreement among humans with diverse preferences"
-  venue: null
+  authors: ["Michiel A. Bakker", "Martin J. Chadwick", "Hannah R. Sheahan", "Michael Henry Tessler", "Lucy Campbell-Gillingham", "Jan Balaguer", "Nat McAleese", "Amelia Glaese", "John Aslanides", "Matthew M. Botvinick", "Christopher Summerfield"]
+  venue: "arXiv"
   year: 2022
   vhint: arxiv
   url: "https://arxiv.org/abs/2211.15006"
@@ -795,7 +855,8 @@
   blurb: "Early method for finding agreement across diverse human preferences."
   conf: high
 - title: "What are human values, and how do we align AI to them?"
-  venue: null
+  authors: ["Oliver Klingefjord", "Ryan Lowe", "Joe Edelman"]
+  venue: "arXiv"
   year: 2024
   vhint: arxiv
   url: "https://arxiv.org/abs/2404.10636"
@@ -806,7 +867,8 @@
   blurb: "Philosophical grounding for what it means to align AI with human values."
   conf: high
 - title: "Generative Social Choice"
-  venue: null
+  authors: ["Sara Fish", "Paul Gölz", "David C. Parkes", "Ariel D. Procaccia", "Gili Rusak", "Itai Shapira", "Manuel Wüthrich"]
+  venue: "arXiv"
   year: 2023
   vhint: arxiv
   url: "https://arxiv.org/abs/2309.01291"
@@ -817,6 +879,7 @@
   blurb: "Social-choice-theoretic framework for aggregating plural preferences in generative AI."
   conf: medium
 - title: "Towards Pluralistic Value Alignment: Aggregating Value Systems through l_p-Regression"
+  authors: ["Roger Lera-Leri", "Filippo Bistaffa", "Marc Serramia", "Maite Lopez-Sanchez", "Juan Rodriguez-Aguilar"]
   venue: "AAMAS Workshop"
   year: 2022
   vhint: city
@@ -830,6 +893,7 @@
 
 # ---------------- DATASETS & BENCHMARKS ----------------
 - title: "Navigating the Cultural Kaleidoscope: A Hitchhiker's Guide to Sensitivity in Large Language Models"
+  authors: ["Somnath Banerjee", "Sayan Layek", "Hari Shrawgi", "Rajarshi Mandal", "Avik Halder", "Shanu Kumar", "Sagnik Basu", "Parag Agrawal", "Rima Hazra", "Animesh Mukherjee"]
   venue: "NAACL"
   year: 2025
   vhint: aclanthology
@@ -841,6 +905,7 @@
   blurb: "Benchmark of LLM sensitivity across cultures."
   conf: high
 - title: "VITAL: A New Dataset for Benchmarking Pluralistic Alignment in Healthcare"
+  authors: ["Anudeex Shetty", "Amin Beheshti", "Mark Dras", "Usman Naseem"]
   venue: "ACL"
   year: 2025
   vhint: aclanthology
@@ -852,7 +917,8 @@
   blurb: "Healthcare-domain benchmark for pluralistic alignment."
   conf: high
 - title: "Value Kaleidoscope: Engaging AI with Pluralistic Human Values, Rights, and Duties"
-  venue: null
+  authors: ["Taylor Sorensen", "Liwei Jiang", "Jena Hwang", "Sydney Levine", "Valentina Pyatkin", "Peter West", "Nouha Dziri", "Ximing Lu", "Kavel Rao", "Chandra Bhagavatula", "Maarten Sap", "John Tasioulas", "Yejin Choi"]
+  venue: "AAAI 2024"
   year: 2023
   vhint: arxiv
   url: https://arxiv.org/abs/2309.00779v2
@@ -863,7 +929,8 @@
   blurb: "Benchmark spanning pluralistic values, rights, and duties."
   conf: high
 - title: "PluriHarms: Benchmarking the Full Spectrum of Human Judgments on AI Harm"
-  venue: null
+  authors: ["Jing-Jing Li", "Joel Mire", "Eve Fleisig", "Valentina Pyatkin", "Anne Collins", "Maarten Sap", "Sydney Levine"]
+  venue: "arXiv"
   year: 2026
   vhint: arxiv
   url: https://arxiv.org/abs/2601.08951v2
@@ -874,7 +941,8 @@
   blurb: "Captures the full spectrum of human judgments about AI harm."
   conf: high
 - title: "Whose Opinions Do Language Models Reflect?"
-  venue: null
+  authors: ["Shibani Santurkar", "Esin Durmus", "Faisal Ladhak", "Cinoo Lee", "Percy Liang", "Tatsunori Hashimoto"]
+  venue: "arXiv"
   year: 2023
   vhint: arxiv
   url: https://arxiv.org/abs/2303.17548v1
@@ -885,8 +953,9 @@
   blurb: "Compares LLM opinions against demographic-group opinion distributions."
   conf: high
 - title: "SafeWorld: Geo-Diverse Safety Alignment"
+  authors: ["Da Yin", "Haoyi Qiu", "Kung-Hsiang Huang", "Kai-Wei Chang", "Nanyun Peng"]
   venue: "NeurIPS"
-  year: null
+  year: 2024
   vhint: neurips
   url: https://arxiv.org/abs/2412.06483v1
   modes: [all]
@@ -896,8 +965,9 @@
   blurb: "Geo-diverse safety alignment benchmark."
   conf: high
 - title: "HelpSteer 2: Open-source dataset for training top-performing reward models"
+  authors: ["Zhilin Wang", "Yi Dong", "Olivier Delalleau", "Jiaqi Zeng", "Gerald Shen", "Daniel Egert", "Jimmy Zhang", "Makesh Sreedhar", "Oleksii Kuchaiev"]
   venue: "NeurIPS"
-  year: null
+  year: 2024
   vhint: neurips
   url: https://doi.org/10.52202/079017-0047
   modes: [steerable]
@@ -907,7 +977,8 @@
   blurb: "Large-scale open preference dataset for reward-model training (artifact)."
   conf: high
 - title: "Whose View of Safety? A Deep DIVE Dataset for Pluralistic Alignment of Text-to-Image Models"
-  venue: null
+  authors: ["Charvi Rastogi", "Tian Huey Teh", "Pushkar Mishra", "Roma Patel", "Ding Wang", "Mark Díaz", "Alicia Parrish", "Aida Mostafazadeh Davani", "Zoe Ashwood", "Michela Paganini", "Vinodkumar Prabhakaran", "Verena Rieser", "Lora Aroyo"]
+  venue: "arXiv"
   year: 2025
   vhint: arxiv
   url: https://arxiv.org/abs/2507.13383v1
@@ -918,7 +989,8 @@
   blurb: "Pluralistic safety judgments for text-to-image models."
   conf: high
 - title: "LIVS: A Pluralistic Alignment Dataset for Inclusive Public Spaces"
-  venue: null
+  authors: ["Rashid Mushkani", "Shravan Nayak", "Hugo Berard", "Allison Cohen", "Shin Koseki", "Hadrien Bertrand"]
+  venue: "arXiv"
   year: 2025
   vhint: arxiv
   url: https://arxiv.org/abs/2503.01894v2
@@ -929,7 +1001,8 @@
   blurb: "Pluralistic alignment dataset for inclusive public-space design."
   conf: high
 - title: "Benchmarking Overton Pluralism in LLMs"
-  venue: null
+  authors: ["Elinor Poole-Dayan", "Jiayi Wu", "Taylor Sorensen", "Jiaxin Pei", "Michiel A. Bakker"]
+  venue: "arXiv"
   year: 2025
   vhint: arxiv
   url: https://arxiv.org/abs/2512.01351v2
@@ -940,7 +1013,8 @@
   blurb: "Dedicated benchmark for Overton-style pluralism."
   conf: high
 - title: "Can Language Models Reason about Individualistic Human Values and Preferences?"
-  venue: null
+  authors: ["Liwei Jiang", "Taylor Sorensen", "Sydney Levine", "Yejin Choi"]
+  venue: "arXiv"
   year: 2024
   vhint: aclanthology
   url: https://arxiv.org/abs/2410.03868v2
@@ -951,7 +1025,8 @@
   blurb: "Tests LLM reasoning about individualistic values and preferences."
   conf: high
 - title: "DailyDilemmas: Revealing Value Preferences of LLMs with Quandaries of Daily Life"
-  venue: null
+  authors: ["Yu Ying Chiu", "Liwei Jiang", "Yejin Choi"]
+  venue: "arXiv"
   year: 2024
   vhint: arxiv
   url: https://arxiv.org/abs/2410.02683v3
@@ -962,7 +1037,8 @@
   blurb: "Daily-life quandaries that reveal LLM value preferences."
   conf: high
 - title: "ValueBench: Towards Comprehensively Evaluating Value Orientations and Understanding of Large Language Models"
-  venue: null
+  authors: ["Yuanyi Ren", "Haoran Ye", "Hanjun Fang", "Xin Zhang", "Guojie Song"]
+  venue: "arXiv"
   year: 2024
   vhint: aclanthology
   url: https://arxiv.org/abs/2406.04214v1
@@ -973,7 +1049,8 @@
   blurb: "Comprehensive evaluation of LLM value orientations."
   conf: high
 - title: "ComPO: Community Preferences for Language Model Personalization"
-  venue: null
+  authors: ["Sachin Kumar", "Chan Young Park", "Yulia Tsvetkov", "Noah A. Smith", "Hannaneh Hajishirzi"]
+  venue: "arXiv"
   year: 2024
   vhint: aclanthology
   url: https://arxiv.org/abs/2410.16027v1
@@ -984,7 +1061,8 @@
   blurb: "Community preference data for LM personalization."
   conf: high
 - title: "EVALUESTEER: Measuring Reward Model Steerability Towards Values and Preferences"
-  venue: null
+  authors: ["Kshitish Ghate", "Andy Liu", "Devansh Jain", "Taylor Sorensen", "Atoosa Kasirzadeh", "Aylin Caliskan", "Mona T. Diab", "Maarten Sap"]
+  venue: "arXiv"
   year: 2025
   vhint: arxiv
   url: https://arxiv.org/abs/2510.06370v2
@@ -995,8 +1073,9 @@
   blurb: "Measures how steerable reward models are toward values and preferences."
   conf: high
 - title: "The PRISM Alignment Dataset: What Participatory, Representative and Individualised Human Feedback Reveals About the Subjective and Multicultural Alignment of Large Language Models"
+  authors: ["Hannah Rose Kirk", "Alexander Whitefield", "Paul Röttger", "Andrew Bean", "Katerina Margatina", "Juan Ciro", "Rafael Mosquera", "Max Bartolo", "Adina Williams", "He He", "Bertie Vidgen", "Scott A. Hale"]
   venue: "NeurIPS"
-  year: null
+  year: 2024
   vhint: neurips
   url: https://arxiv.org/abs/2404.16019v2
   modes: [distributional]
@@ -1006,8 +1085,9 @@
   blurb: "Participatory, representative human-feedback dataset on subjective alignment."
   conf: high
 - title: "A Sociotechnical Perspective on Aligning AI with Pluralistic Human Values"
-  venue: null
-  year: null
+  authors: ["Dalia Ali", "Aysenur Kocak", "Michèle Wieland", "Dora Zhao", "Allison Koenecke", "Orestis Papakyriakopoulos"]
+  venue: "ICLR 2025 Workshop"
+  year: 2025
   vhint: openreview
   url: https://openreview.net/forum?id=oSRqZO2O2O
   modes: [distributional]
@@ -1017,7 +1097,8 @@
   blurb: "Sociotechnical framing of pluralistic value alignment."
   conf: medium
 - title: "The Moral Integrity Corpus: A Benchmark for Ethical Dialogue Systems"
-  venue: null
+  authors: ["Caleb Ziems", "Jane A. Yu", "Yi-Chia Wang", "Alon Halevy", "Diyi Yang"]
+  venue: "arXiv"
   year: 2020
   vhint: aclanthology
   url: https://arxiv.org/abs/2204.03021v1
@@ -1028,8 +1109,9 @@
   blurb: "Benchmark corpus for ethical dialogue systems."
   conf: medium
 - title: "MID-Space: Aligning Diverse Communities' Needs to Inclusive Public Spaces"
-  venue: null
-  year: null
+  authors: ["Shravan Nayak", "Rashid Mushkani", "Hugo Berard", "Allison Cohen", "Shin Koseki", "Hadrien Bertrand"]
+  venue: "NeurIPS 2024 Pluralistic Alignment Workshop"
+  year: 2024
   vhint: openreview
   url: https://openreview.net/forum?id=kyfkMRT4Ao
   modes: [distributional]
@@ -1039,7 +1121,8 @@
   blurb: "Aligns diverse community needs for inclusive public spaces."
   conf: high
 - title: "NoveltyBench: Evaluating Language Models for Humanlike Diversity"
-  venue: null
+  authors: ["Yiming Zhang", "Harshita Diddee", "Susan Holm", "Hanchen Liu", "Xinyue Liu", "Vinay Samuel", "Barry Wang", "Daphne Ippolito"]
+  venue: "arXiv"
   year: 2025
   vhint: arxiv
   url: https://arxiv.org/abs/2504.05228v4
@@ -1050,7 +1133,8 @@
   blurb: "Evaluates humanlike output diversity; directly relevant to alignment-induced homogenization."
   conf: high
 - title: "Benchmarking Distributional Alignment of Large Language Models"
-  venue: null
+  authors: ["Nicole Meister", "Carlos Guestrin", "Tatsunori Hashimoto"]
+  venue: "arXiv"
   year: 2024
   vhint: aclanthology
   url: https://arxiv.org/abs/2411.05403v1
@@ -1061,7 +1145,8 @@
   blurb: "Benchmark for distributional alignment of LLMs."
   conf: high
 - title: "Adaptive Chameleon or Stubborn Sloth: Revealing the Behavior of Large Language Models in Knowledge Conflicts"
-  venue: null
+  authors: ["Jian Xie", "Kai Zhang", "Jiangjie Chen", "Renze Lou", "Yu Su"]
+  venue: "arXiv"
   year: 2023
   vhint: arxiv
   url: https://arxiv.org/abs/2305.13300v4
@@ -1072,8 +1157,9 @@
   blurb: "Reveals LLM behavior under knowledge conflicts."
   conf: high
 - title: "CIVICS: Building a Dataset for Examining Culturally-Informed Values in Large Language Models"
+  authors: ["Giada Pistilli", "Alina Leidinger", "Yacine Jernite", "Atoosa Kasirzadeh", "Alexandra Sasha Luccioni", "Margaret Mitchell"]
   venue: "AAAI"
-  year: null
+  year: 2024
   vhint: aaai
   url: https://arxiv.org/abs/2405.13974v1
   modes: [distributional]
@@ -1083,7 +1169,8 @@
   blurb: "Dataset for culturally-informed values in LLMs."
   conf: high
 - title: "NormBank: A Knowledge Bank of Situational Social Norms"
-  venue: null
+  authors: ["Caleb Ziems", "Jane Dwivedi-Yu", "Yi-Chia Wang", "Alon Halevy", "Diyi Yang"]
+  venue: "arXiv"
   year: 2023
   vhint: aclanthology
   url: https://arxiv.org/abs/2305.17008v2
@@ -1094,7 +1181,8 @@
   blurb: "Knowledge bank of situational social norms."
   conf: high
 - title: "KorNAT: LLM Alignment Benchmark for Korean Social Values and Common Knowledge"
-  venue: null
+  authors: ["Jiyoung Lee", "Minwoo Kim", "Seungho Kim", "Junghwan Kim", "Seunghyun Won", "Hwaran Lee", "Edward Choi"]
+  venue: "arXiv"
   year: 2024
   vhint: aclanthology
   url: https://arxiv.org/abs/2402.13605v7
@@ -1105,7 +1193,8 @@
   blurb: "Korean social-values alignment benchmark (non-English coverage)."
   conf: high
 - title: "Measuring Perceived Slant in Large Language Models Through User Evaluations"
-  venue: null
+  authors: ["Sean J. Westwood", "Justin Grimmer", "Andrew B. Hall"]
+  venue: "Stanford GSB Working Paper"
   year: 2025
   vhint: models slant
   url: https://www.gsb.stanford.edu/faculty-research/working-papers/measuring-perceived-slant-large-language-models-through-user
@@ -1116,7 +1205,8 @@
   blurb: "User evaluations of perceived political slant in LLMs."
   conf: high
 - title: "Towards Measuring the Representation of Subjective Global Opinions in Language Models"
-  venue: null
+  authors: ["Esin Durmus", "Karina Nguyen", "Thomas I. Liao", "Nicholas Schiefer", "Amanda Askell", "Anton Bakhtin", "Carol Chen", "Zac Hatfield-Dodds", "Danny Hernandez", "Nicholas Joseph", "Liane Lovitt", "Sam McCandlish", "Orowa Sikder", "Alex Tamkin", "Janel Thamkul", "Jared Kaplan", "Jack Clark", "Deep Ganguli"]
+  venue: "arXiv"
   year: 2023
   vhint: arxiv
   url: https://arxiv.org/abs/2306.16388v2
@@ -1127,7 +1217,8 @@
   blurb: "Measures representation of subjective global opinions in LMs."
   conf: high
 - title: "NepPlural: A Human-Anchored Benchmark for Persona Annotation in Nepali Migration Discourse"
-  venue: null
+  authors: ["Jinu Nyachhyon", "Anish Khatiwada", "Bimal Timilsina"]
+  venue: "arXiv"
   year: 2026
   vhint: arxiv
   url: https://arxiv.org/abs/2610.15732
@@ -1140,7 +1231,8 @@
 
 # ---------------- SURVEYS ----------------
 - title: "A Survey on Personalized and Pluralistic Preference Alignment in Large Language Models"
-  venue: null
+  authors: ["Zhouhang Xie", "Junda Wu", "Yiran Shen", "Yu Xia", "Xintong Li", "Aaron Chang", "Ryan Rossi", "Sachin Kumar", "Bodhisattwa Prasad Majumder", "Jingbo Shang", "Prithviraj Ammanabrolu", "Julian McAuley"]
+  venue: "arXiv"
   year: 2025
   vhint: arxiv
   url: https://arxiv.org/abs/2504.07070v1
@@ -1151,7 +1243,8 @@
   blurb: "Survey of personalized and pluralistic preference alignment."
   conf: high
 - title: "Personalization of Large Language Models: A Survey"
-  venue: null
+  authors: ["Zhehao Zhang", "Ryan A. Rossi", "Branislav Kveton", "Yijia Shao", "Diyi Yang", "Hamed Zamani", "Franck Dernoncourt", "Joe Barrow", "Tong Yu", "Sungchul Kim", "Ruiyi Zhang", "Jiuxiang Gu", "Tyler Derr", "Hongjie Chen", "Junda Wu", "Xiang Chen", "Zichao Wang", "Subrata Mitra", "Nedim Lipka", "Nesreen Ahmed", "Yu Wang"]
+  venue: "arXiv"
   year: 2024
   vhint: arxiv
   url: https://arxiv.org/abs/2411.00027v3
@@ -1162,8 +1255,9 @@
   blurb: "Survey of LLM personalization (steerable pluralism adjacent)."
   conf: high
 - title: "Survey of Cultural Awareness in Language Models: Text and Beyond"
+  authors: ["Siddhesh Pawar", "Junyeong Park", "Jiho Jin", "Arnav Arora", "Junho Myung", "Srishti Yadav", "Faiz Ghifari Haznitrama", "Inhwa Song", "Alice Oh", "Isabelle Augenstein"]
   venue: "MIT Press"
-  year: null
+  year: 2024
   vhint: mit
   url: https://arxiv.org/abs/2411.00860v1
   modes: [steerable]
@@ -1173,7 +1267,8 @@
   blurb: "Survey of cultural awareness in language models."
   conf: high
 - title: "Towards Scalable Automated Alignment of LLMs: A Survey"
-  venue: null
+  authors: ["Boxi Cao", "Keming Lu", "Xinyu Lu", "Jiawei Chen", "Mengjie Ren", "Hao Xiang", "Peilin Liu", "Yaojie Lu", "Ben He", "Xianpei Han", "Le Sun", "Hongyu Lin", "Bowen Yu"]
+  venue: "arXiv"
   year: 2024
   vhint: arxiv
   url: https://arxiv.org/abs/2406.01252v3
@@ -1184,7 +1279,8 @@
   blurb: "Survey of scalable automated alignment approaches."
   conf: high
 - title: "Large Language Model Alignment: A Survey"
-  venue: null
+  authors: ["Tianhao Shen", "Renren Jin", "Yufei Huang", "Chuang Liu", "Weilong Dong", "Zishan Guo", "Xinwei Wu", "Yan Liu", "Deyi Xiong"]
+  venue: "arXiv"
   year: 2023
   vhint: arxiv
   url: https://arxiv.org/abs/2309.15025v1
@@ -1195,7 +1291,8 @@
   blurb: "Broad survey of LLM alignment."
   conf: high
 - title: "AI Alignment: A Comprehensive Survey"
-  venue: null
+  authors: ["Jiaming Ji", "Tianyi Qiu", "Boyuan Chen", "Borong Zhang", "Hantao Lou", "Kaile Wang", "Yawen Duan", "Zhonghao He", "Lukas Vierling", "Donghai Hong", "Jiayi Zhou", "Zhaowei Zhang", "Fanzhi Zeng", "Juntao Dai", "Xuehai Pan", "Kwan Yee Ng", "Aidan O'Gara", "Hua Xu", "Brian Tse", "Jie Fu", "Stephen McAleer", "Yaodong Yang", "Yizhou Wang", "Song-Chun Zhu", "Yike Guo", "Wen Gao"]
+  venue: "arXiv"
   year: 2023
   vhint: arxiv
   url: https://arxiv.org/abs/2310.19852v6
@@ -1206,7 +1303,8 @@
   blurb: "Comprehensive survey of AI alignment."
   conf: high
 - title: "Aligning Multimodal LLM with Human Preference: A Survey"
-  venue: null
+  authors: ["Tao Yu", "Yi-Fan Zhang", "Chaoyou Fu", "Junkang Wu", "Jinda Lu", "Kun Wang", "Xingyu Lu", "Yunhang Shen", "Guibin Zhang", "Dingjie Song", "Yibo Yan", "Tianlong Xu", "Qingsong Wen", "Zhang Zhang", "Yan Huang", "Liang Wang", "Tieniu Tan"]
+  venue: "arXiv"
   year: 2025
   vhint: arxiv
   url: https://arxiv.org/abs/2503.14504v2
@@ -1217,7 +1315,8 @@
   blurb: "Survey of multimodal LLM preference alignment."
   conf: high
 - title: "Large Vision-Language Model Alignment and Misalignment: A Survey Through the Lens of Explainability"
-  venue: null
+  authors: ["Dong Shu", "Haiyan Zhao", "Jingyu Hu", "Weiru Liu", "Ali Payani", "Lu Cheng", "Mengnan Du"]
+  venue: "arXiv"
   year: 2025
   vhint: aclanthology
   url: https://arxiv.org/abs/2501.01346v3
@@ -1228,8 +1327,9 @@
   blurb: "Vision-language alignment survey through explainability."
   conf: high
 - title: "A Survey of Progress in LLM Alignment from the Perspective of Reward Design"
+  authors: ["Miaomiao Ji", "Yanqiu Wu", "Zhibin Wu", "Shoujin Wang", "Jian Yang", "Mark Dras", "Usman Naseem"]
   venue: "IEEE"
-  year: null
+  year: 2026
   vhint: ieee
   url: https://doi.org/10.1109/tai.2026.3654921
   modes: [all]
